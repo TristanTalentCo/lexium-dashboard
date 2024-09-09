@@ -1,0 +1,286 @@
+
+   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* VARIABLES PARA LA NUEVA PALETA DE COLORES LEXIUM 2024 */
+:root {
+--lx-main-background: #252638;
+--lx-widget-title-bluegray:#5D5E6D;
+--lx-widget-light-bluegray:#c4c5d4;
+--lx-widget-btn1:#586AAA;
+--lx-widget-tablecell:#DBE3F8;
+--lx-blue-third:#5B6B96;
+--lx_grey-main:#F0F0F0;
+--lx-gray-widget:#EED9B9;
+--lx-gray-widget-shadow:#d79633;
+--lx-gray-widget-contextmenu-hover:#ecc589;
+--lx-blue-main:#2C318D;
+/*widget colors*/
+--lx-blue-table-main:#DBE3F8;
+--lx-blue-table-btn:#586AAA;
+--lx-blue-table-btn-active:#7bbbf7;
+
+--lx-green-table-btn:#58aa78;
+--lx-green-table-btn-hover:#20422e;
+--lx-green-table-btn-active:#7ce2a3;
+
+
+}
+
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+
+/* ESTE ESTILO DE BODY MODIFICA EL FONDO PARA COINCIDIR CON EL DISEÑO LEXIUM 2024 */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-size: small;
+  background: var(--lx-main-background) !important;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* ESTE ESTILO ES HEREDADO DEL CSS ORIGINAL Y SOBREPONE UN PADDING DE 15 PX*/
+.cd-main-content{
+  padding: 15px 0;
+}
+
+
+/* ESTILOS HEADER 2024 */
+.lx-db-header{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Roboto';
+}
+
+.lx-db-header-top, .lx-header-top-content, .lx-db-header-top-mainicons, .lx-db-footer-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.lx-db-header-top {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 16px 16px 0px 0px;
+  background: var(--lx_grey-main);
+}
+.lx-header-top-content{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lx-db-header-top-logo img{
+  height: 25px;
+  padding: 10px 5px;
+}
+.searchbar-container{
+  
+  border: 1px solid var(--lx-blue-third, #5B6B96);
+  background: #FFF;
+  border-radius: 25px;
+  display: inline-flex;
+  flex-direction: row;
+  padding: 5px 0px 5px 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.searchbar-input input, input:focus{
+  width: 300px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  
+}
+
+.lx-db-header-top-mainicons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.mainicons-btn{
+  padding: 10px 5px;
+}
+.lx-db-header-mid{
+  background: var(--lx_grey-main);
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.lx-db-header-mid-content{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ESTILOS TAB HEADERS NOMBRE DE LA INSTITUCION Y ALERTAS 2024 */
+
+.lx-db-header-mid__datehour{
+  color: var(--lx-widget-title-bluegray);
+}
+
+.lx-db-header-mid__institutionname{
+  width: 37%;
+  display: inline-flex;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px 10px 0px 0px;
+  background: var(--lx-blue-main, #2C318D);
+  color: var(--lx_grey-main);
+}
+
+.lx-db-header-mid__institutionname p{
+  padding: 0px 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.lx-db-header-mid__alert{
+  display: inline-flex;
+  padding: 11px 27px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--lx_grey-main);
+  border-radius: 10px 10px 0px 0px;
+  background: var(--lx-widget-title-bluegray);
+}
+
+.lx-db-header-mid__alert:hover{
+  background: var(--lx-blue-third);
+  cursor: pointer;
+}
+
+.lx-db-header-mid__alert a{
+  text-decoration: none;
+  color: var(--lx_grey-main);
+  
+}
+
+/* ESTILOS MENU HORIZONTAL 2024 */
+
+.lx-db-header-nav, .lx-db-header-nav-content{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.lx-db-nav{
+  width: 90%;
+}
+.lx-db-nav-ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.lx-db-nav__btn{
+  text-align: center;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lx-db-nav__btn a{
+  color: var(--lx_grey-main);
+  text-decoration: none;
+}
+
+.lx-db-nav-ul li {
+  background-color: var(--lx-blue-main);
+}
+.lx-db-nav-ul li:hover{
+  background-color: var(--lx-widget-btn1);
+  cursor:pointer;
+}
+
+.lx-db-nav-ul li:hover > .menu-vertical-container{
+  display: block;
+}
+
+.lx-db-header-nav, .lx-db-footer{
+  background-color: var(--lx-blue-main);
+  color: var(--lx_grey-main);
+}
+.lx-db-main{
+  background-color: var(--lx_grey-main);
+}
+
+/* ESTILOS SUBMENUS 2024 */
+
+.menu-vertical-container{
+  z-index: 1000;
+  display: none;
+  margin: 43px 0 0 0 ;
+  position: absolute;
+  border-radius: 6px;
+  width: 220px;
+  background-color: var(--lx-widget-btn1) !important;
+  padding: 10px 0;
+}
+
+.menu-vertical{
+  list-style: none;
+  padding: 0;
+}
+
+.menu-vertical li{
+  padding: 12px 10px; 
+  background-color: inherit;
+}
+.menu-vertical li:hover{
+  background-color: var(--lx-blue-main);
+}
+
+/* ESTILOS FOOTER 2024 */
+.lx-db-footer {
+  height: 80px;
+  border-radius: 0px 0px 16px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lx-db-footer-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lx-db-footer__element a{
+  text-decoration: none;
+  color: var(--lx_grey-main);
+}

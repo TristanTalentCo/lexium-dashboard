@@ -1,0 +1,589 @@
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+.lx-db-frame {
+  padding: 15px 0px;
+  color: var(--lx-widget-title-bluegray);
+  width: 90%;
+  max-width: 1167px;
+}
+
+
+
+
+
+.main-seleccion-tablero{
+  display: flex;
+  padding: 0px 397px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+
+.sel-tablero{
+  user-select: none;
+  margin: 15px 0;
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: 1px solid var(--lx-blue-third, #5B6B96);
+  
+}
+.radio__input{
+  display: none;
+}
+.radio__label{
+  padding: 6px 25px;
+  display: flex;
+  flex-direction: row;
+  width:max-content;
+  color: var(--lx-blue-third, #5B6B96);
+  background: #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.radio__label:not(:last-of-type){
+  border-right: 1px solid var(--lx-blue-third, #5B6B96);
+}
+
+.radio__input:checked + .radio__label{
+  background: var(--lx-blue-third, #5B6B96);
+  color: var(--lx_grey-main);
+}
+
+
+
+/* AREA DASHBOARDS */
+
+.main-dashboard-area{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+/* ESTRUCTURA TABLEROS */
+.tablero-container{
+  width: 100%;
+}
+.tablero-container-h{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+
+/* ESTRUCTURA WIDGETS */
+.widget-row{
+  display: flex;
+  padding: 8px 30px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 13px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.widget-col{
+  display: flex;
+  flex-direction: column;
+  padding: 8px 8px;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 13px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.widget-body{
+  display: flex;
+  width: 350px;
+  padding: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+  border-radius: 8px;
+  background: var(--lx-gray-widget);
+}
+.widget-body-wide{
+  display: flex;
+  width: 723px;
+  padding: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+  border-radius: 8px;
+  background: var(--lx-gray-widget);
+}
+.widget-body-4{
+  display: flex;
+  width: 723px;
+  height: 707px;
+  padding: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+  border-radius: 8px;
+  background: var(--lx-gray-widget);
+}
+.widget-body-full{
+  display: flex;
+  width: 100%;
+  height: 714px;
+  padding: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+  border-radius: 8px;
+  background: var(--lx-gray-widget);
+}
+.widget-body:hover, .widget-body-wide:hover, .widget-body-4:hover, .widget-body-full:hover{
+  box-shadow: var(--lx-gray-widget-shadow) 0px 2px 6px 0px;
+}
+.widget-title{
+  display: flex;
+  flex-direction: row;
+  padding: 11px 6px 0px 6px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.widget-title-text h2{
+  user-select: none;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--lx-widget-title-bluegray);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.widget-context-menu-icon{
+  display: flex;
+  padding: 4px 4px;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 20px;
+}
+.cm-icon {
+  fill:var(--lx-widget-title-bluegray);
+}
+.widget-context-menu-icon:hover{
+  background: var(--lx-widget-title-bluegray);
+  cursor: pointer;
+}
+.widget-context-menu-icon:hover > .cm-icon{
+  fill:var(--lx_grey-main);
+}
+.cm-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+}
+.widget-context-menu-icon:hover > .menu-contextual-container{
+  display: block;
+}
+.menu-contextual-container{
+  z-index: 1100;
+  display: none;
+  margin: 24px 0 0 0 ;
+  position: absolute;
+  border-radius: 4px;
+  width: 200px;
+  background-color: var(--lx-gray-widget);
+  padding: 0px 0;
+  box-shadow: var(--lx-gray-widget-shadow) 0px 2px 4px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.menu-contextual{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+.menu-contextual li{
+  user-select: none;
+  text-align: center;
+  width: 100%;
+  list-style: none;
+  padding: 5px 0;
+  text-transform: capitalize;
+}
+.menu-contextual li:hover{
+  background: var(--lx-gray-widget-contextmenu-hover) ;
+  color: var(--lx_grey-main);
+  cursor: pointer;
+}
+
+.menu-contextual li a{
+  color: var(--lx-widget-title-bluegray);
+  text-decoration: none;
+}
+
+/* CONTENIDO WIDGETS */
+
+.widget-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 290px;
+  align-self: stretch;
+  border-radius: 4px;
+  background: #F4F4F4;
+}
+.widget-content-full{
+  height: 100%;
+  align-self: stretch;
+  border-radius: 4px;
+  background: #F4F4F4;
+}
+
+/* CONTENIDO WIDGET WEBINARS */
+
+.w-webinars-container{
+  width: 100%;
+  height: 288px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.webinars-row{
+  user-select: none;
+  width: 344px;
+  height: 68px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.webinar-title{
+  width: 147px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  background: var(--lx-blue-table-main);
+  
+}
+
+.webinar-title h4{
+  padding-left: 8px;
+}
+.webinar-date{
+  width: 109px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  background: var(--lx-blue-table-main);
+}
+.webinar-date p{
+  padding: 0;
+  margin: -1px;
+}
+
+.wb-date, .wb-hour{
+  font-weight: bold;
+}
+.wb-title, .wb-note{
+  text-transform: capitalize;
+}
+.webinar-btn-calendar, .webinar-btn-link{
+  width: 39px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 2px;
+  background: var(--lx-blue-table-btn);
+  cursor: pointer;
+}
+.webinar-btn-calendar:hover, .webinar-btn-link:hover{
+  background: var(--lx-main-background);
+  cursor: pointer;
+}
+.webinar-btn-calendar:active, .webinar-btn-link:active{
+  background: var(--lx-blue-table-btn-active);
+  cursor: pointer;
+}
+
+.btn-green{
+  background-color: var(--lx-green-table-btn);
+}
+.btn-green:hover{
+  background-color: var(--lx-green-table-btn-hover);
+}
+.btn-green:active{
+  background-color: var(--lx-green-table-btn-active);
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
