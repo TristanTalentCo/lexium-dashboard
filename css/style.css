@@ -86,8 +86,8 @@ textarea {
 .lx-db-frame {
   padding: 15px 0px;
   color: var(--lx-widget-title-bluegray);
-  width: 90%;
-  max-width: 1167px;
+  width: 1167px;
+  
 }
 
 
