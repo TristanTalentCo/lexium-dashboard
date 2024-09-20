@@ -148,6 +148,7 @@ textarea {
 /* AREA DASHBOARDS */
 
 .main-dashboard-area{
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -158,15 +159,19 @@ textarea {
 }
 
 /* ESTRUCTURA TABLEROS */
-.tablero-container{
-  width: 100%;
-  display: none;
+.tablero-container {
   opacity: 0;
-  transition: opacity 0.2s ease;
+  pointer-events: none; /* Disable interaction for non-visible elements */
+  position: absolute; /* Keep them stacked in the same position */
+  top: 0;
+  left: 0;
+  width: 100%; /* Adjust as per your layout */
+  transition: opacity 0.7s ease; /* Smooth fade transition */
 }
 .tablero-container.active {
-  display: block;
   opacity: 1;
+  pointer-events: all; /* Enable interaction for the visible element */
+  position: relative;
 }
 .hidden {
   opacity: 0; /* For fade-out animation */

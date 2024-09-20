@@ -548,7 +548,7 @@
   
 </body>
 <script>
-  // Function to handle tab switching with fade effect
+// Function to handle seamless tab switching with fade effect
 function switchTablero(event) {
   // Get the clicked radio button's ID (e.g., "tab01", "tab02", etc.)
   const targetTabId = event.target.id;
@@ -561,32 +561,23 @@ function switchTablero(event) {
     tab04: 'tablero04'
   };
 
-  // Determine the tablero to be shown
+  // Determine which tablero to show
   const targetTableroId = tableroMap[targetTabId];
 
-  // Select all tableros
+  // Get all tableros
   const tableros = document.querySelectorAll('.tablero-container');
 
   // Get the currently active tablero
   const currentTablero = document.querySelector('.tablero-container.active');
-  
-  // If there's an active tablero, fade it out
-  if (currentTablero) {
-    currentTablero.classList.add('hidden'); // Add fade-out class
-    setTimeout(() => {
-      currentTablero.classList.remove('active', 'hidden');
-      currentTablero.style.display = 'none'; // Hide it after fade-out
-    }, 500); // Wait for fade-out transition to complete
+
+  // If there's an active tablero, start fading it out
+  if (currentTablero && currentTablero.id !== targetTableroId) {
+    currentTablero.classList.remove('active'); // Remove active to start fade-out
   }
 
   // Fade in the new selected tablero
   const newTablero = document.getElementById(targetTableroId);
-  setTimeout(() => {
-    newTablero.style.display = 'block'; // Show before fading in
-    setTimeout(() => {
-      newTablero.classList.add('active'); // Add active class for fade-in
-    }, 10); // Slight delay to ensure the display change is registered
-  }, 500); // Wait for fade-out to finish before starting fade-in
+  newTablero.classList.add('active'); // Add active to start fade-in
 }
 
 // Attach event listeners to the radio inputs
@@ -597,8 +588,7 @@ document.getElementById('tab04').addEventListener('change', switchTablero);
 
 // Initialize: Show the first tablero on page load
 document.getElementById('tab01').checked = true; // Set the first tab as checked
-document.getElementById('tablero01').style.display = 'block'; // Show first tablero
-document.getElementById('tablero01').classList.add('active'); // Mark first tablero as active
+document.getElementById('tablero01').classList.add('active'); // Mark the first tablero as active
 
 </script>
 </html>
