@@ -252,6 +252,12 @@ body {
   padding: 10px 0;
 }
 
+
+/* Make submenu visible when clicked (on tablets/mobile) */
+.lx-db-nav-ul li.menu-visible > .menu-vertical-container {
+  display: block;
+}
+
 .menu-vertical{
   list-style: none;
   padding: 0;
