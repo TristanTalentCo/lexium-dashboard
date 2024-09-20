@@ -277,7 +277,7 @@ textarea {
 .widget-context-menu-icon{
   display: flex;
   padding: 4px 4px;
-  justify-content: center;
+  justify-content: right;
   gap: 10px;
   border-radius: 20px;
 }
@@ -303,7 +303,7 @@ textarea {
 .menu-contextual-container{
   z-index: 1100;
   display: none;
-  margin: 24px 0 0 0 ;
+  margin: 24px -30px 0 0 ;
   position: absolute;
   border-radius: 4px;
   width: 200px;
