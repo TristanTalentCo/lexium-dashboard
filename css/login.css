@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-size: small;
+    background: var(--lx-main-background) !important;
+  }
+
+main{
+    width: 100%;
+    height: 100vh;
+}
+.image-frame{
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.image-frame::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    opacity: .3;
+
+    background-image: url("/img/login-bg/bg-institucion.png");
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bluebar{
+    z-index: 2;
+    width: 8%;
+    height: 100vh;
+    background-color: #2C318D;
+}
+
+.content-wrap{
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(255,255,255,0) 40%);
+}
+.info-group{
+    display: flex;
+    flex-direction: row;
+
+    width: 1300px;
+    justify-content: space-between;
+}
+
+.texto-bienvenida{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.title-frame{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.title-frame h2{
+    margin: 0;
+    width: 420px;
+    font-size: 36px;
+    font-weight: 500;
+    color: #2C318D;
+    line-height: 120%;
+}
+.title-frame h2 span{
+
+    color:#F78F20;
+}
+
+.text-content{
+    width: 490px;
+}
+
+.text-content p{
+    padding-top: 50px;
+    color: #5F5F5F;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 190%;
+}
+
+.video-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #2C318D;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+}
+.video-btn a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 280px;
+    height: 88px;
+    border-radius: 50px;
+    background-color: #F78F20;
+    color: #fff;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
+}
+.play-btn:hover{
+
+    background-color: #FBC45A;
+
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.25);
+}
+.play-btn img{
+    width: 58px;
+    height: 58px;
+    padding-right: 12px;
+}
+.play-btn h4{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.login-col{
+
+}
+
+.logo-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.logo-institucion{
+    width: 216px;
+}
+.logo-lexium{
+    width: 240px;
+}
+
+.login-frame{
+    width: 598px;
+    height: 564px;
+    border-radius: 15px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
+
+    backdrop-filter: blur(16px) saturate(200%);
+    -webkit-backdrop-filter: blur(16px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+}
+
+.login-saludo{
+    display: flex;
+    flex-direction: row;
+}
+.icon-dots{
+
+}
+.icon-dots img{
+    padding-top: 28px;
+    padding-right: 13px;
+}
+.saludo-hola h2{
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    font-size: 55px;
+    color: #F78F20;
+    
+}
+
+.saludo-hola{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.saludo-hola h3{
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+    color: #2C318D;
+}
+
+.login-form{
+ width: 500px;
+
+}
+.login-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    
+}
+.login-form form input{
+    display: block;
+
+    padding: .375rem .75rem;
+    margin: 10px 0 ;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-inicio{
+    background-color: #586AAA;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px ;
+    cursor: pointer;
+}
+.btn-inicio:hover{
+    background-color: #3d4977;
+}
+
+.footer{
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-content{
+    font-size: 13px;
+    font-weight: 500;
+    width: 1300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.footer-content a{
+    text-decoration: none;
+    color: #495057;
+}
+
+.rrss-icons{
+    width: 150px;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content: space-between;
+}
+
+.rrss-icons img{
+    width: 25px;
+    filter: brightness(.3);
+}
