@@ -37,7 +37,7 @@ main{
     z-index: 1;
     opacity: .3;
 
-    background-image: url("img/login-bg/bg-institucion.png");
+    background-image: url("../img/login-bg/bg-institucion.png");
     background-position:bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -182,7 +182,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: scenter;
 
     -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
@@ -199,6 +199,7 @@ main{
 .login-saludo{
     display: flex;
     flex-direction: row;
+    padding: 30px 0 60px;
 }
 .icon-dots{
 
@@ -207,20 +208,19 @@ main{
     padding-top: 28px;
     padding-right: 13px;
 }
-.saludo-hola h2{
-    font-weight: 500;
-    padding: 0;
-    margin: 0;
-    font-size: 55px;
-    color: #F78F20;
-    
-}
 
 .saludo-hola{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.saludo-hola h2{
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    font-size: 55px;
+    color: #F78F20;
 }
 .saludo-hola h3{
     font-weight: 400;
@@ -231,20 +231,17 @@ main{
 }
 
 .login-form{
- width: 500px;
-
+    width: 500px;
+    padding-bottom: 80px;
 }
 .login-form form{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
-    
 }
-.login-form form input{
-    display: block;
-
+.input-un input{
+    width: 300px;
     padding: .375rem .75rem;
     margin: 10px 0 ;
     font-size: 1.2rem;
@@ -257,6 +254,39 @@ main{
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.input-pw{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.input-pw input{
+    width: 250px;
+    padding: .375rem .75rem;
+    margin: 10px 0 ;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem 0 0 .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.eye-pw{
+    width: 50px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b8b8b8;
+    border-radius: 0 .25rem .25rem 0;
+}
+
+.eye-pw img{
+    width: 25px;
+    filter: brightness();
+}
 .btn-inicio{
     background-color: #586AAA;
     color: #fff;
@@ -271,6 +301,19 @@ main{
     background-color: #3d4977;
 }
 
+.form-actions{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: medium;
+}
+.form-actions a{
+  text-decoration: none;
+  color: #495057;
+}
 .footer{
     width: 100%;
     padding-top: 60px;
@@ -278,7 +321,6 @@ main{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
 }
 
 .footer-content{
@@ -310,3 +352,19 @@ main{
     width: 25px;
     filter: brightness(.3);
 }
+
+
+/*-----------MEDIA QUERIES-----------*/
+
+
+/* Media Query for Tablets (width between 768px and 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    
+  }
+  
+ /* Media Query for Mobile Phones (width below 768px) */
+@media (max-width: 767px) {
+ 
+  }
+  
