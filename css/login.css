@@ -75,7 +75,7 @@ main{
 .title-frame{
     display: flex;
     flex-direction: row;
-
+    padding-bottom: 15px;
 }
 
 .title-frame h2{
@@ -182,11 +182,11 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: scenter;
 
-    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
-    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
+
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.25);
 
     backdrop-filter: blur(16px) saturate(200%);
     -webkit-backdrop-filter: blur(16px) saturate(200%);
@@ -232,7 +232,7 @@ main{
 
 .login-form{
     width: 500px;
-    padding-bottom: 80px;
+    padding-bottom: 36px;
 }
 .login-form form{
     display: flex;
@@ -300,7 +300,20 @@ main{
 .btn-inicio:hover{
     background-color: #3d4977;
 }
-
+.form-alerts{
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    
+    border-radius: 8px;
+    background-color: rgb(255, 214, 78, .5);
+}
+.form-alerts img{
+    padding-right: 15px;
+}
 .form-actions{
 
     width: 100%;
@@ -313,6 +326,10 @@ main{
 .form-actions a{
   text-decoration: none;
   color: #495057;
+}
+.form-actions a:hover{
+  text-decoration:underline;
+
 }
 .footer{
     width: 100%;
@@ -358,13 +375,329 @@ main{
 
 
 /* Media Query for Tablets (width between 768px and 1024px) */
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1366px) and (min-width: 768px) {
+    .bluebar{
+        width: 7%;
+    }
+    .content-wrap{
+        width: 93%;
+    }
+    .info-group{
+        
+        width: 100%;
+        height: 100vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .texto-bienvenida{
+        
+    }
+    .title-frame{
+        
+        width: 340px;
+    }
+    .title-frame h2{
+        font-size: 28px;
+    }
+
+    .text-content{
+        width: 360px;
+    }
+    .text-content p{
+        padding-top: 10px;
+        font-size: 16px;
+    }
+
+    .video-btn{
+        font-size: 18px;
+        line-height: 100%;
+    }
+    .play-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 200px;
+        height: 60px;
+        border-radius: 50px;
+        background-color: #F78F20;
+        color: #fff;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
+        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
+    }
+
+    .play-btn img{
+        width: 40px;
+        height: 40px;
+        padding-right: 12px;
+    }
+    .play-btn h4{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .login-col{
+        
+    }
+    .logo-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    
+    .logo-institucion{
+        width: 180px;
+    }
+    .logo-lexium{
+        width: 180px;
+    }
+    
+    .login-frame{
+        width: 475px;
+        height: 460px; 
+    }
+    
+    .login-saludo{
+        display: flex;
+        flex-direction: row;
+        padding: 30px 0 35px;
+    }
+    .login-form{
+        width: 100%;
+        padding-bottom: 12px;
+    }
+    .icon-dots{
+    
+    }
+    .icon-dots img{
+        padding-top: 18px;
+        padding-right: 13px;
+    }
+    
+    .saludo-hola{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .saludo-hola h2{
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+        font-size: 42px;
+        color: #F78F20;
+    }
+    .saludo-hola h3{
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+        font-size: 24px;
+        color: #2C318D;
+    }
+    .input-un input{
+        width: 250px;
+        padding: .2rem .75rem;
+        margin: 10px 0 ;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+    
+    .input-pw{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .input-pw input{
+        width: 214px;
+        padding: .2rem .75rem;
+        margin: 10px 0 ;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem 0 0 .25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+    
+    .eye-pw{
+        width: 36px;
+        height: 36px;
+    }
+    
+    .eye-pw img{
+        width: 25px;
+        filter: brightness();
+    }
+    .btn-inicio{
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+    .form-actions{
+        font-size: 14px;
+    }
+    .footer{
+        padding-top: 5px;
+    }
+    .footer-content{
+
+        width: 80%;
 
     
+    }
   }
   
  /* Media Query for Mobile Phones (width below 768px) */
 @media (max-width: 767px) {
+
+    .bluebar{
+        display: none;
+    }
+    .image-frame{
+        width: 100%;
+        height: 900px;
+        align-items: center;
+        justify-content: center;
+    }
+    .image-frame::before{
+        height: 900px;
+        background-position:top;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .content-wrap{
  
+        height: fit-content;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 15%, rgba(255,255,255,0) 40%);
+    }
+    .info-group{
+        width: 100%;
+        justify-content: center;
+    }
+    .texto-bienvenida{
+        display: none;
+    }
+    .login-col{
+        
+    }
+    .logo-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    
+    .logo-institucion{
+        width: 180px;
+    }
+    .logo-lexium{
+        width: 180px;
+    }
+    
+    .login-frame{
+        width: 475px;
+        height: 460px; 
+    }
+    
+    .login-saludo{
+        display: flex;
+        flex-direction: row;
+        padding: 30px 0 35px;
+    }
+    .login-form{
+        width: 100%;
+        padding-bottom: 12px;
+    }
+    .icon-dots{
+    
+    }
+    .icon-dots img{
+        padding-top: 18px;
+        padding-right: 13px;
+    }
+    
+    .saludo-hola{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .saludo-hola h2{
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+        font-size: 42px;
+        color: #F78F20;
+    }
+    .saludo-hola h3{
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+        font-size: 24px;
+        color: #2C318D;
+    }
+    .input-un input{
+        width: 250px;
+        padding: .2rem .75rem;
+        margin: 10px 0 ;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+    
+    .input-pw{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .input-pw input{
+        width: 214px;
+        padding: .2rem .75rem;
+        margin: 10px 0 ;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem 0 0 .25rem;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+    
+    .eye-pw{
+        width: 36px;
+        height: 36px;
+    }
+    
+    .eye-pw img{
+        width: 25px;
+        filter: brightness();
+    }
+    .btn-inicio{
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+    .form-actions{
+        font-size: 14px;
+    }
+    .footer-content{
+        flex-direction: column;
+    }
   }
   
