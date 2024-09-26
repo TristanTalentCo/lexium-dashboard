@@ -473,7 +473,7 @@ textarea {
   height:115px ;
 }
 .h-cell, .c-cell{
-  width: 112px;
+  width: 111px;
 
   display: flex;
   flex-direction: column;
