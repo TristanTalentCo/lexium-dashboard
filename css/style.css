@@ -546,6 +546,145 @@ textarea {
   width: 94px;
 }
 
+/* WIDGET DETALLE DE CREDITOS */
+
+.w-credetalle-container{
+  width: 100%;
+  height: 288px;
+  background-color: ;
+}
+
+.crd-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 682px;
+  height: 44px;
+  margin: 2px 2px ;
+  border-radius: 2px;
+  background-color: var(--lx-tb-header-orange1);
+}
+.crd-h-control{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.select-gpo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 250px;
+  
+}
+
+.sel-da{
+  user-select: none;
+  margin: 0px 0;
+  display: inline-flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid var(--lx-blue-third, #5B6B96);
+  
+}
+.radio__input_da{
+  display: none;
+}
+.radio__label_da{
+  padding: 6px 25px;
+  display: flex;
+  flex-direction: row;
+  width:max-content;
+  color: var(--lx-blue-third, #5B6B96);
+  background: #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.radio__label_da:not(:last-of-type){
+  border-right: 1px solid var(--lx-blue-third, #5B6B96);
+}
+
+.radio__input_da:checked + .radio__label_da{
+  background: var(--lx-blue-third, #5B6B96);
+  color: var(--lx_grey-main);
+}
+
+.crd-tb-tags>.crd-tb-cell:not(:first-child){
+  background-color: var(--lx-tb-header-orange2);
+  font-weight: 500;
+}
+.crd-row, .crd-tb-tags {
+  display: flex;
+  flex-direction: row;
+}
+.crd-row-tags {
+  display: flex;
+  flex-direction: row;
+}
+.row-fw{
+  font-weight: 500;
+}
+.crd-row-tags> .c-3 {
+  background-color: var(--lx-tb-blue2);
+}
+
+.crd-row:nth-of-type(odd)>.crd-tb-cell{
+  background-color: var(--lx-tb-blue1);
+}
+.crd-row:nth-of-type(even)>.crd-tb-cell{
+  background-color: var(--lx-tb-blue2);
+}
+.c-1{
+  width: 314px;
+  padding: 0 10px;
+}
+
+.c-1 p{
+  max-width: 41ch;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis ;
+  font-weight: 500;
+}
+.c-0{
+  width: 170px;
+  align-items: center;
+}
+.c-2{
+  width: 192px;
+  align-items: center;
+}
+
+.bg-0{
+  background: none !important;
+}
+.c-3{
+  width: 94px;
+  align-items: center;
+}
+.crd-tb-cell{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2px 2px;
+  height: 30px;
+  border-radius: 2px;
+
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

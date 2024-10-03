@@ -8,7 +8,6 @@
 
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style2.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -41,7 +40,7 @@
             <div class="widget-body-wide">
               <div class="widget-title">
                 <div class="widget-title-text">
-                  <h2>Nombre de Widget</h2>
+                  <h2>Detalle de creditos</h2>
                 </div>
                 <div class="cm-container">
                     <div class="widget-context-menu-icon">
@@ -53,52 +52,97 @@
                 </div>
               </div>
               <div class="widget-content">
+                <!--INICIA CONTENIDO DE WIDGET DETALLE DE CREDITOS - VISTA DE CAMPUS-->
                 <div class="w-credetalle-container">
+                  <!--INICIA CONTROLES DE SELECCION-->
                   <div class="crd-row">
                     <div class="crd-header">
+                      <div class="crd-h-control">
+                        <div class="select-gpo">
+                          <select name="crd-tipovista">
+                            <option value="tag1">Tipo de vista</option>
+                            <option value="institucion" selected>Institución</option>
+                            <option value="campus">Campus</option>
+                          </select>
+                          <select name="crd-periodo">
+                            <option value="tag1">Selecciona periodo</option>
+                            <option value="periodo2" selected>2023 - 2024</option>
+                            <option value="periodo1">2022 - 2023</option>
+                          </select>
+                        </div>
+                        <div class="sel-da">
+                          <input id="tab01" value="Tablero Estratégico" class="radio__input_da" type="radio" name="selButton">
+                          <label for="tab01" class="radio__label_da">Disponibles</label>
 
+                          <input id="tab04" value="Tablero Gold Mine" class="radio__input_da" type="radio" name="selButton">
+                          <label for="tab04" class="radio__label_da">Asignados</label>
+                        </div>
+                      </div>                      
                     </div>
                   </div>
-                  <div class="crd-row">
-                    <div class="crd-tb-tags">
-                      <div class="crd-tb-cell c-1"></div>
-                      <div class="crd-tb-cell c-0"><p>Evaluaciones</p></div>
-                      <div class="crd-tb-cell c-0"><p>Entrenamientos</p></div>
+                  <!--TERMINA CONTROLES DE SELECCION-->
+                  <!--INICIA CONTENEDOR DEL HEADER DE LA TABLA-->
+                  <div class="tb-header" id="tb-header-container">
+                    <!--INICIA FILA DE ETIQUETAS PARA COLUMNAS-->
+                    <div class="crd-row">
+                      <div class="crd-tb-tags">
+                        <div class="crd-tb-cell c-1"></div>
+                        <div class="crd-tb-cell c-0"><p>Evaluaciones</p></div>
+                        <div class="crd-tb-cell c-0"><p>Entrenamientos</p></div>
+                      </div>
                     </div>
+                    <!--INICIA FILA DE ETIQUETAS PARA COLUMNAS-->
                   </div>
+                  <!--TERMINA CONTENEDOR DEL HEADER DE LA TABLA-->
+                  <!--INICIA CONTENIDO DE TABLA-->
                   <div class="crd-tb-content">
-                    <div class="crd-row" id="cred-campus-tb">
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-campus-row">
                       <div class="crd-tb-cell c-1" ><p id="cred-campus-name">Nombre Campus Placeholder Nombre Campus Placeholder Nombre Campus Placeholder</p></div>
-                      <div class="crd-tb-cell c-0" ><p id="cred-campus-eval">???</p></div>
-                      <div class="crd-tb-cell c-0" ><p id="cred-campus-train">???</p></div>
+                      <div class="crd-tb-cell c-0" ><p id="cred-campus-eval">???/???</p></div>
+                      <div class="crd-tb-cell c-0" ><p id="cred-campus-train">???/???</p></div>
                     </div>
-                    <div class="crd-row" id="cred-campus-tb">
-                      <div class="crd-tb-cell c-1" ><p id="cred-campus-name">Nombre Campus Placeholder</p></div>
-                      <div class="crd-tb-cell c-0" ><p id="cred-campus-eval">???</p></div>
-                      <div class="crd-tb-cell c-0" ><p id="cred-campus-train">???</p></div>
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-campus-row">
+                      <div class="crd-tb-cell c-1" ><p id="cred-campus-name">Nombre Campus Placeholder Nombre Campus Placeholder Nombre Campus Placeholder</p></div>
+                      <div class="crd-tb-cell c-0" ><p id="cred-campus-eval">???/???</p></div>
+                      <div class="crd-tb-cell c-0" ><p id="cred-campus-train">???/???</p></div>
                     </div>
-                    <div class="crd-row" id="cred-campus-tb">
-                      <div class="crd-tb-cell c-1" ><p id="cred-campus-name">Nombre Campus Placeholder</p></div>
-                      <div class="crd-tb-cell c-0" ><p id="cred-campus-eval">???</p></div>
-                      <div class="crd-tb-cell c-0" ><p id="cred-campus-train">???</p></div>
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-campus-row">
+                      <div class="crd-tb-cell c-1" ><p id="cred-campus-name">Nombre Campus Placeholder Nombre Campus Placeholder Nombre Campus Placeholder</p></div>
+                      <div class="crd-tb-cell c-0" ><p id="cred-campus-eval">???/???</p></div>
+                      <div class="crd-tb-cell c-0" ><p id="cred-campus-train">???/???</p></div>
                     </div>
-                    <div class="crd-row" id="cred-campus-tb">
-                      <div class="crd-tb-cell c-1" ><p id="cred-campus-name">Nombre Campus Placeholder</p></div>
-                      <div class="crd-tb-cell c-0" ><p id="cred-campus-eval">???</p></div>
-                      <div class="crd-tb-cell c-0" ><p id="cred-campus-train">???</p></div>
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-campus-row">
+                      <div class="crd-tb-cell c-1" ><p id="cred-campus-name">Nombre Campus Placeholder Nombre Campus Placeholder Nombre Campus Placeholder</p></div>
+                      <div class="crd-tb-cell c-0" ><p id="cred-campus-eval">???/???</p></div>
+                      <div class="crd-tb-cell c-0" ><p id="cred-campus-train">???/???</p></div>
                     </div>
-                    <div class="crd-row" id="cred-campus-tb">
-                      <div class="crd-tb-cell c-1" ><p id="cred-campus-name">Nombre Campus Placeholder</p></div>
-                      <div class="crd-tb-cell c-0" ><p id="cred-campus-eval">???</p></div>
-                      <div class="crd-tb-cell c-0" ><p id="cred-campus-train">???</p></div>
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-campus-row">
+                      <div class="crd-tb-cell c-1" ><p id="cred-campus-name">Nombre Campus Placeholder Nombre Campus Placeholder Nombre Campus Placeholder</p></div>
+                      <div class="crd-tb-cell c-0" ><p id="cred-campus-eval">???/???</p></div>
+                      <div class="crd-tb-cell c-0" ><p id="cred-campus-train">???/???</p></div>
                     </div>
-                    <div class="crd-row" id="cred-campus-tb">
-                      <div class="crd-tb-cell c-1" ><p id="cred-campus-name">Nombre Campus Placeholder</p></div>
-                      <div class="crd-tb-cell c-0" ><p id="cred-campus-eval">???</p></div>
-                      <div class="crd-tb-cell c-0" ><p id="cred-campus-train">???</p></div>
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-campus-row">
+                      <div class="crd-tb-cell c-1" ><p id="cred-campus-name">Nombre Campus Placeholder Nombre Campus Placeholder Nombre Campus Placeholder</p></div>
+                      <div class="crd-tb-cell c-0" ><p id="cred-campus-eval">???/???</p></div>
+                      <div class="crd-tb-cell c-0" ><p id="cred-campus-train">???/???</p></div>
                     </div>
+                    <!--TERMINA FILA-->
+                    
                   </div>
+                  <!--TERMINA CONTENIDO DE TABLA-->
                 </div>
+                <!--TERMINA CONTENIDO DE WIDGET DETALLE DE CREDITOS-->
               </div>
             </div>
             <!-- TERMINA CUERPO DE WIDGET -->
@@ -107,29 +151,146 @@
           <!-- TERMINA FILA DE WIDGETS -->
           <!-- INICIA FILA DE WIDGETS -->
           <div class="widget-row">
-
             <!-- INICIA CUERPO DE WIDGET -->
             <div class="widget-body-wide">
               <div class="widget-title">
                 <div class="widget-title-text">
-                  <h2>Nombre de Widget</h2>
+                  <h2>Detalle de creditos</h2>
                 </div>
                 <div class="cm-container">
                     <div class="widget-context-menu-icon">
                       <svg class="cm-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
                         <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
                       </svg>
-
+  
                     </div>
                 </div>
               </div>
               <div class="widget-content">
+                <!--INICIA CONTENIDO DE WIDGET DETALLE DE CREDITOS - VISTA DE INSTITUCION-->
+                <div class="w-credetalle-container">
+                  <!--INICIA CONTROLES DE SELECCION-->
+                  <div class="crd-row">
+                    <div class="crd-header">
+                      <div class="crd-h-control">
+                        <div class="select-gpo">
+                          <select name="crd-tipovista">
+                            <option value="tag1">Tipo de vista</option>
+                            <option value="institucion" selected>Institución</option>
+                            <option value="campus">Campus</option>
+                          </select>
+                          <select name="crd-periodo">
+                            <option value="tag1">Selecciona periodo</option>
+                            <option value="periodo2" selected>2023 - 2024</option>
+                            <option value="periodo1">2022 - 2023</option>
+                          </select>
+                        </div>
+                        <div class="sel-da">
+                          <input id="tab01" value="Tablero Estratégico" class="radio__input_da" type="radio" name="selButton">
+                          <label for="tab01" class="radio__label_da">Disponibles</label>
 
+                          <input id="tab04" value="Tablero Gold Mine" class="radio__input_da" type="radio" name="selButton">
+                          <label for="tab04" class="radio__label_da">Asignados</label>
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                  <!--TERMINA CONTROLES DE SELECCION-->
+                  <!--INICIA CONTENEDOR DEL HEADER DE LA TABLA-->
+                  <div class="tb-header" id="tb-header-container">
+                    <!--INICIA FILA DE ETIQUETAS PARA COLUMNAS-->
+                    <div class="crd-row">
+                      <div class="crd-tb-tags">
+                        <div class="crd-tb-cell c-3"></div>
+                        <div class="crd-tb-cell c-2 bg-0"></div>
+                        <div class="crd-tb-cell c-2"><p>Evaluaciones</p></div>
+                        <div class="crd-tb-cell c-2"><p>Entrenamientos</p></div>
+                      </div>
+                    </div>
+                      <!--INICIA FILA DE ETIQUETAS PARA COLUMNAS AZULES-->
+                      <div class="crd-row-tags row-fw">
+                        <div class="crd-tb-cell c-3" ><p>Grado</p></div>
+                        <div class="crd-tb-cell c-3" ><p># Grupos</p></div>
+                        <div class="crd-tb-cell c-3" ><p>Alumnos</p></div>
+                        <div class="crd-tb-cell c-3" ><p>Por Contestar</p></div>
+                        <div class="crd-tb-cell c-3" ><p>Asignadas</p></div>
+                        <div class="crd-tb-cell c-3" ><p>Por Contestar</p></div>
+                        <div class="crd-tb-cell c-3" ><p>Asignadas</p></div>
+                      </div>
+                      <!--TERMINA FILA DE ETIQUETAS PARA COLUMNAS AZULES-->
+                  </div>
+                  <!--TERMINA CONTENEDOR DEL HEADER DE LA TABLA-->
+                  <!--INICIA FILA DE ETIQUETAS PARA COLUMNAS-->
+                  <!--INICIA CONTENIDO DE TABLA-->
+                  <div class="crd-tb-content">
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-ins-row">
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grado">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grupos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-alumnos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-as">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-as">?</p></div>
+                    </div>
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-ins-row">
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grado">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grupos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-alumnos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-as">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-as">?</p></div>
+                    </div>
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-ins-row">
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grado">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grupos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-alumnos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-as">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-as">?</p></div>
+                    </div>
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-ins-row">
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grado">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grupos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-alumnos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-as">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-as">?</p></div>
+                    </div>
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-ins-row">
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grado">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grupos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-alumnos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-as">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-as">?</p></div>
+                    </div>
+                    <!--TERMINA FILA-->
+                    
+                    
+                  </div>
+                  <!--TERMINA CONTENIDO DE TABLA-->
+                </div>
+                <!--TERMINA CONTENIDO DE WIDGET DETALLE DE CREDITOS-->
               </div>
             </div>
             <!-- TERMINA CUERPO DE WIDGET -->
+
           </div>
           <!-- TERMINA FILA DE WIDGETS -->
+         
         </div>
         
 
