@@ -1,0 +1,177 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+ <div class="lx-db-frame">
+  
+  <main class="lx-db-main">
+    <div class="lx-db-main-content">
+
+      <div class="main-dashboard-area">
+
+
+        <div class="tablero-container active" id="tablero00">
+         
+          <!-- INICIA FILA DE WIDGETS -->
+          <div class="widget-row">
+            <!-- INICIA CUERPO DE WIDGET -->
+            <div class="widget-body-wide">
+              <div class="widget-title">
+                <div class="widget-title-text">
+                  <h2>Avance de evaluaciones</h2>
+                </div>
+                <div class="cm-container">
+                    <div class="widget-context-menu-icon">
+                      <svg class="cm-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                      </svg>
+  
+                    </div>
+                </div>
+              </div>
+              <div class="widget-content">
+                <!--INICIA CONTENIDO DE WIDGET DETALLE DE aevITOS - VISTA DE INSTITUCION-->
+                <div class="w-aev-container">
+                  <!--INICIA CONTROLES DE SELECCION-->
+                  <div class="aev-row">
+                    <div class="aev-header">
+                      <div class="aev-h-control">
+                        <div class="select-gpo">
+                          <select name="ave-tipovista">
+                            <option value="tag1">Selecciona periodo</option>
+                            <option value="institucion" selected>Periodo 1</option>
+                            <option value="campus">Periodo 2</option>
+                          </select>
+
+                        </div>
+                        <div class="sel-da">
+                          <input id="tab01" value="Tablero Estratégico" class="radio__input_da" type="radio" name="selButton">
+                          <label for="tab01" class="radio__label_da">Disponibles</label>
+
+                          <input id="tab04" value="Tablero Gold Mine" class="radio__input_da" type="radio" name="selButton">
+                          <label for="tab04" class="radio__label_da">Asignados</label>
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                  <!--TERMINA CONTROLES DE SELECCION-->
+                  <!--INICIA CONTENEDOR DEL HEADER DE LA TABLA-->
+                  <div class="tb-header" id="tb-header-container">
+                    <!--INICIA FILA DE ETIQUETAS PARA COLUMNAS-->
+
+                      <!--INICIA FILA DE ETIQUETAS PARA COLUMNAS AZULES-->
+                      <div class="ave-row-tags row-fw">
+                        <div class="ave-tb-cell a-1" ><p>Grado</p></div>
+                        <div class="ave-tb-cell a-2" ><p># Grupos</p></div>
+                        <div class="ave-tb-cell a-2" ><p>Alumnos</p></div>
+                        <div class="ave-tb-cell a-3" >
+                          <div class="ave-tb-subcell">
+                            <div class="gpo-subcell">
+                              <div class="subcell-1"><p>Realizadas</p></div>
+                              <div class="subcell-1"><p>Pendientes</p></div>
+                            </div>
+                            <div class="subcell-1"><p>Avance</p></div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!--TERMINA FILA DE ETIQUETAS PARA COLUMNAS AZULES-->
+                  </div>
+                  <!--TERMINA CONTENEDOR DEL HEADER DE LA TABLA-->
+                  <!--INICIA FILA DE ETIQUETAS PARA COLUMNAS-->
+                  <!--INICIA CONTENIDO DE TABLA-->
+                  <div class="ave-tb-content">
+                    <!--INICIA FILA-->
+                    <div class="ave-row" id="ave-row">
+                      <div class="ave-tb-cell a-1"><p id="aev-grado">?</p></div>
+                      <div class="ave-tb-cell a-2"><p id="aev-grupos">?</p></div>
+                      <div class="ave-tb-cell a-2"><p id="aev-alumnos">?</p></div>
+                      <div class="ave-tb-cell a-3">
+                        <div class="gpo-subcell">
+                          <!-- Progress Bar, positioned behind the cells -->
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                          </div>
+                          
+                          <!-- Tests Made and Tests Left -->
+                          <div class="subcell-1" id="aev-realizadas">
+                            <p>??</p> <!-- Tests Made -->
+                          </div>
+                          <div class="subcell-1" id="aev-pendientes">
+                            <p>??</p> <!-- Tests Left -->
+                          </div>
+                        </div>
+                    
+                        <!-- Percentage Progress -->
+                        <div class="subcell-1" id="aev-avance">
+                          <p>66%</p> <!-- Example percentage -->
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!--TERMINA FILA-->
+                  </div>
+                  <!--TERMINA CONTENIDO DE TABLA-->
+                </div>
+                <!--TERMINA CONTENIDO DE WIDGET DETALLE DE aevITOS-->
+              </div>
+            </div>
+            <!-- TERMINA CUERPO DE WIDGET -->
+
+          </div>
+          <!-- TERMINA FILA DE WIDGETS -->
+         
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </main>
+
+ </div>
+  
+</body>
+
+
+<script>
+// VALORES DE TEST REALIZADOS Y TEST PENDIENTES
+const testsMade = 5;
+const testsLeft = 5;
+const totalTests = testsMade + testsLeft;
+
+// CALCULO DEL PORCENTAJE DE AVANCE
+const progressPercentage = (testsMade / totalTests) * 100;
+
+// MODIFICA LA BARRA DE PROGRESO VERDE BASADO EN EL PORCENTAJE OBTENIDO
+document.getElementById('progress-bar').style.width = progressPercentage + '%';
+
+// Optionally, update the displayed percentage if necessary
+document.getElementById('aev-avance').innerHTML = `<p>${Math.round(progressPercentage)}%</p>`;
+
+</script>
+</html>
