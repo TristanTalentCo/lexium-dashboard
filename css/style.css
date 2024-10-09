@@ -1022,6 +1022,31 @@ textarea {
 .btn-contacto-hm img{
   height: 32px;
 }
+/* CONTENIDO WIDGET GRAFICO CAMPANA */
+.w-grafico-container{
+  user-select: none;
+  width: 100%;
+  height: 288px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--lx-gray-text-main);
+}
+.graf-control{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: red;
+}
+.graf-visual{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
