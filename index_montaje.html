@@ -1,0 +1,1190 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+ <div class="lx-db-frame">
+  <header class="lx-db-header">
+    <div class="lx-db-header-top">
+      <div class="lx-header-top-content">
+        <div class="lx-db-header-top-logo"><img src = "img/logos/lexium-logo.svg" alt="Lexium"/></div>
+        <div class="lx-db-header-top-searchbar">
+          <div class="searchbar-container">
+            <div class="searchbar-icon"><img src = "img/icons/search.svg" alt="Buscar"/></div>
+            <div class="searchbar-input"><input type="text" placeholder="Buscar Alumno..."></div>
+          </div>
+        </div>
+        <div class="lx-db-header-top-mainicons">
+          <div class="mainicons-btn"><img src = "img/icons/home.svg" alt="Regresar al Inicio"/></div>
+          <div class="mainicons-btn"><img src = "img/icons/settings.svg" alt="Configuración"/></div>
+          <div class="mainicons-btn"><img src = "img/icons/help.svg" alt="Ayuda"/></div>
+          <div class="mainicons-btn"><img src = "img/icons/exit.svg" alt="Cerrar Sesión"/></div>
+        </div>
+      </div>
+    </div>
+    <div class="lx-db-header-mid">
+      <div class="lx-db-header-mid-content">
+        <div class="lx-db-header-mid__datehour">
+          <p>30 de diciembre 2024 22:00 hrs.</p>
+        </div>
+        <div class="lx-db-header-mid__institutionname">
+          <p>NOMBRE DE LA INSTITUCIÓN</p>
+        </div>
+        <div class="lx-db-header-mid__alert"><img src = "img/icons/bell.svg" alt="Alertas"/> <a href="">Alertas</a></div>
+      </div>
+    </div>
+    <div class="lx-db-header-nav">
+      <div class="lx-db-header-nav-content">
+        <nav class="lx-db-nav">
+          <ul class="lx-db-nav-ul">
+            <li class="lx-db-nav__btn">
+              <a href="">diagnósticos</a>
+            </li>
+            <li class="lx-db-nav__btn">
+              <a href="">administrar ▾</a>
+              <div class="menu-vertical-container">
+                <ul class="menu-vertical">
+                  <li><a href="">administrar campus</a></li>
+                  <li><a href="">administrar grupos / créditos</a></li>
+                  <li><a href="">administrar usuarios de consulta</a></li>
+                  <li><a href="">mover alumnos/grupos</a></li>
+                  <li><a href="">ingreso</a></li>
+                  <li><a href="">api docs</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="lx-db-nav__btn">
+              <a href="">interpretación</a>
+            </li>
+            <li class="lx-db-nav__btn">
+              <a href="">ideas estratégicas ▾</a>
+              <div class="menu-vertical-container">
+                <ul class="menu-vertical">
+                  <li><a href="">ideas estratégicas</a></li>
+                  <li><a href="">herramientas de aprendizaje</a></li>
+                  <li><a href="">información significativa</a></li>
+                  <li><a href="">aprendizaje es prosperidad</a></li>
+                  <li><a href="">audio pláticas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="lx-db-nav__btn">
+              <a href="">tutoriales</a>
+            </li>
+            <li class="lx-db-nav__btn">
+              <a href="">reporteador ▾</a>
+              <div class="menu-vertical-container">
+                <ul class="menu-vertical">
+                  <li><a href="">opción 1</a></li>
+                  <li><a href="">opción 2</a></li>
+                  <li><a href="">opción 3</a></li>
+                  <li><a href="">opción 4</a></li>
+                  <li><a href="">opción 5</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="lx-db-main">
+    <div class="lx-db-main-content">
+      <div class="main-seleccion-tablero">
+        <div class="sel-tablero">
+          <input id="tab01" value="Tablero Estratégico" class="radio__input" type="radio" name="selButton">
+          <label for="tab01" class="radio__label">Tablero A</label>
+          <input id="tab02" value="Tablero de Gestión" class="radio__input" type="radio" name="selButton">
+          <label for="tab02" class="radio__label">Tablero B</label>
+          <input id="tab03" value="Tablero de Gestión" class="radio__input" type="radio" name="selButton">
+          <label for="tab03" class="radio__label">Tablero C</label>
+          <!--input id="tab04" value="Tablero Gold Mine" class="radio__input" type="radio" name="selButton">
+          <label for="tab04" class="radio__label">Tablero D</label-->
+        </div>
+
+
+      </div>
+      <div class="main-dashboard-area">
+        
+
+        <div class="tablero-container" id="tablero01">
+          <div class="tablero-container-h">
+            <!-- INICIA FILA DE WIDGETS -->
+            <div class="widget-col">
+              <!-- INICIA CUERPO DE WIDGET -->
+              <div class="widget-body">
+                <div class="widget-title">
+                  <div class="widget-title-text">
+                    <h2>Gráfica de evaluación</h2>
+                  </div>
+                  <div class="cm-container">
+                      <div class="widget-context-menu-icon">
+                        <svg class="cm-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                          <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                        </svg>
+                        <div class="menu-contextual-container">
+                          <ul class="menu-contextual">
+                            <li><a href="">opción 1</a></li>
+                            <li><a href="">opción 2</a></li>
+                            <li><a href="">opción 2</a></li>
+                            <li><a href="">opción 2</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="widget-content">
+                  <div class="w-grafico-container">
+                    <div class="graf-control">
+                      <select name="" id="">
+                        <option value="">Selecciona evaluación</option>
+                        <option value="">Opción evaluación 1</option>
+                        <option value="">Opción evaluación 2</option>
+                        <option value="">Opción evaluación 3</option>
+                        <option value="">Opción evaluación 4</option>
+                      </select>
+                      <select name="" id="">
+                        <option value="">Selecciona grado</option>
+                        <option value="">Todos los grados primaria</option>
+                        <option value="">Todos los grados secundaria</option>
+                        <option value="">1° año primaria</option>
+                        <option value="">2° año primaria</option>
+                        <option value="">3° año primaria</option>
+                        <option value="">4° año primaria</option>
+                        <option value="">5° año primaria</option>
+                        <option value="">6° año primaria</option>
+                        <option value="">1° año secundaria</option>
+                        <option value="">2° año secundaria</option>
+                        <option value="">3° año secundaria</option>
+                      </select>
+                    </div>
+                    <div class="graf-gp-container">
+                      <div class="graf-group">
+                        <div class="graf-visual">
+                          <img src="img/graficas/bell70.svg" alt="Bell curve chart">
+                        </div>
+                        <div class="graf-markers">
+                          <div class="marker mk-white mk-1"><p id="marker-1">0</p></div>
+                          <div class="marker mk-yellow mk-2" style="left: 102px;"><p id="marker-2">40</p></div>
+                          <div class="marker mk-green mk-3" style="left: 180px;"><p id="marker-3">70</p></div>
+                          <div class="marker mk-white mk-4"><p id="marker-4">100</p></div>
+                        </div>
+                      </div>
+                      <!-- Indicator positioned statically -->
+                      <div class="graf-ind" id="graf-indicator" style="left: 40px;">
+                        <div class="dashed-line">
+                          <img src="img/graficas/dashed-line.svg" alt="Dashed line">
+                        </div>
+                        <div class="marker mk-greyblue">
+                          <p id="marker-main">50</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="graf-footer"><p id="g-footer"></p></div>
+                  </div>
+                </div>
+              </div>
+              <!-- TERMINA CUERPO DE WIDGET -->
+              <!-- INICIA CUERPO DE WIDGET -->
+              <div class="widget-body">
+                <div class="widget-title">
+                  <div class="widget-title-text">
+                    <h2>Agenda Webinars</h2>
+                  </div>
+                  <div class="cm-container">
+                      <div class="widget-context-menu-icon">
+                        <svg class="cm-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                          <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                        </svg>
+                        <div class="menu-contextual-container">
+                          <ul class="menu-contextual">
+                            <li><a href="">opción 1</a></li>
+                            <li><a href="">opción 2</a></li>
+                            <li><a href="">opción 2</a></li>
+                            <li><a href="">opción 2</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="widget-content">
+                  <div class="widget-content">
+                    <!-- INICIA CONTENIDO WIDGET WEBINARS-->
+                    <div class="w-webinars-container">
+                        <div class="webinars-row">
+                            <div class="webinar-title">
+                                <h4 class="wb-title" id="">webinar title otra vez un texto largo </h4>
+                            </div>
+                            <div class="webinar-date">
+                                <p class="wb-date" id="">15/07/2024</p>
+                                <p class="wb-hour" id="">14:00 hrs.</p>
+                                <p class="wb-note" id="">sesión en vivo</p>
+                            </div>
+                            <button class="webinar-btn-calendar btn-green">
+                                <img src="img/icons/calendar.svg" alt="">
+                            </button>
+    
+                            <button class="webinar-btn-link">
+                                <img src="img/icons/link.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="webinars-row">
+                            <div class="webinar-title">
+                                <h4 class="wb-title"  id="">webinar title otra vez un texto largo </h4>
+                            </div>
+                            <div class="webinar-date">
+                                <p class="wb-date"  id="">15/07/2024</p>
+                                <p class="wb-hour"  id="">14:00 hrs.</p>
+                                <p class="wb-note"  id="">sesión en vivo</p>
+                            </div>
+                            <button class="webinar-btn-calendar">
+                                <img src="img/icons/calendar.svg" alt="">
+                            </button>
+    
+                            <button class="webinar-btn-link">
+                                <img src="img/icons/link.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="webinars-row">
+                            <div class="webinar-title">
+                                <h4 class="wb-title"  id="">webinar title otra vez un texto largo </h4>
+                            </div>
+                            <div class="webinar-date">
+                                <p class="wb-date"  id="">15/07/2024</p>
+                                <p class="wb-hour"  id="">14:00 hrs.</p>
+                                <p class="wb-note"  id="">sesión en vivo</p>
+                            </div>
+                            <button class="webinar-btn-calendar">
+                                <img src="img/icons/calendar.svg" alt="">
+                            </button>
+    
+                            <button class="webinar-btn-link">
+                                <img src="img/icons/link.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="webinars-row">
+                            <div class="webinar-title">
+                                <h4 class="wb-title"  id="">webinar title otra vez un texto largo </h4>
+                            </div>
+                            <div class="webinar-date">
+                                <p class="wb-date"  id="">15/07/2024</p>
+                                <p class="wb-hour"  id="">14:00 hrs.</p>
+                                <p class="wb-note"  id="">sesión en vivo</p>
+                            </div>
+                            <button class="webinar-btn-calendar">
+                                <img src="img/icons/calendar.svg" alt="">
+                            </button>
+    
+                            <button class="webinar-btn-link">
+                                <img src="img/icons/link.svg" alt="">
+                            </button>
+                        </div>
+    
+                    </div>
+                    <!-- TERMINA CONTENIDO WIDGET -->
+                  </div>
+                </div>
+              </div>
+              <!-- TERMINA CUERPO DE WIDGET -->
+            </div>
+            <!-- TERMINA FILA DE WIDGETS -->
+            <!-- INICIA FILA DE WIDGETS -->
+            <div class="widget-col">
+              <!-- INICIA CUERPO DE WIDGET -->
+              <div class="widget-body-4">
+                <div class="widget-title">
+                  <div class="widget-title-text">
+                    <h2>Mesas de trabajo</h2>
+                  </div>
+                  <div class="cm-container">
+                      <div class="widget-context-menu-icon">
+                        <svg class="cm-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                          <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                        </svg>
+                        <div class="menu-contextual-container">
+                          <ul class="menu-contextual">
+                            <li><a href="">opción 1</a></li>
+                            <li><a href="">opción 2</a></li>
+                            <li><a href="">opción 2</a></li>
+                            <li><a href="">opción 2</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="widget-content-full">
+                </div>
+              </div>
+              <!-- TERMINA CUERPO DE WIDGET -->
+            </div>
+            <!-- TERMINA FILA DE WIDGETS -->
+          </div>
+        </div>
+
+        <div class="tablero-container" id="tablero02">
+          <!-- INICIA FILA DE WIDGETS -->
+          <div class="widget-row">
+            <!-- INICIA CUERPO DE WIDGET -->
+            <div class="widget-body-wide">
+              <div class="widget-title">
+                <div class="widget-title-text">
+                  <h2>Avance de evaluaciones</h2>
+                </div>
+                <div class="cm-container">
+                    <div class="widget-context-menu-icon">
+                      <svg class="cm-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                      </svg>
+                      <div class="menu-contextual-container">
+                        <ul class="menu-contextual">
+                          <li><a href="">opción 1</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="widget-content">
+                <div class="w-aev-container">
+                  <!--INICIA CONTROLES DE SELECCION-->
+                  <div class="aev-row">
+                    <div class="aev-header">
+                      <div class="aev-h-control">
+                        <div class="select-gpo">
+                          <select name="ave-tipovista">
+                            <option value="tag1">Selecciona periodo</option>
+                            <option value="institucion" selected>Periodo 1</option>
+                            <option value="campus">Periodo 2</option>
+                          </select>
+
+                        </div>
+                        <div class="sel-da">
+                          <input id="tab01" value="Tablero Estratégico" class="radio__input_da" type="radio" name="selButton">
+                          <label for="tab01" class="radio__label_da">Disponibles</label>
+
+                          <input id="tab04" value="Tablero Gold Mine" class="radio__input_da" type="radio" name="selButton">
+                          <label for="tab04" class="radio__label_da">Asignados</label>
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                  <!--TERMINA CONTROLES DE SELECCION-->
+                  <!--INICIA CONTENEDOR DEL HEADER DE LA TABLA-->
+                  <div class="tb-header" id="tb-header-container">
+                    <!--INICIA FILA DE ETIQUETAS PARA COLUMNAS-->
+
+                      <!--INICIA FILA DE ETIQUETAS PARA COLUMNAS AZULES-->
+                      <div class="ave-row-tags row-fw">
+                        <div class="ave-tb-cell a-1" ><p>Grado</p></div>
+                        <div class="ave-tb-cell a-2" ><p># Grupos</p></div>
+                        <div class="ave-tb-cell a-2" ><p>Alumnos</p></div>
+                        <div class="ave-tb-cell a-3" >
+                          <div class="ave-tb-subcell">
+                            <div class="gpo-subcell">
+                              <div class="subcell-1"><p>Realizadas</p></div>
+                              <div class="subcell-1"><p>Pendientes</p></div>
+                            </div>
+                            <div class="subcell-1"><p>Avance</p></div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!--TERMINA FILA DE ETIQUETAS PARA COLUMNAS AZULES-->
+                  </div>
+                  <!--TERMINA CONTENEDOR DEL HEADER DE LA TABLA-->
+                  <!--INICIA FILA DE ETIQUETAS PARA COLUMNAS-->
+                  <!--INICIA CONTENIDO DE TABLA-->
+                  <div class="ave-tb-content">
+                    <!--INICIA FILA-->
+                    <div class="ave-row" id="ave-row">
+                      <div class="ave-tb-cell a-1"><p id="aev-grado">?</p></div>
+                      <div class="ave-tb-cell a-2"><p id="aev-grupos">?</p></div>
+                      <div class="ave-tb-cell a-2"><p id="aev-alumnos">?</p></div>
+                      <div class="ave-tb-cell a-3">
+                        <div class="gpo-subcell">
+                          <!-- Progress Bar, positioned behind the cells -->
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                          </div>
+                          
+                          <!-- Tests Made and Tests Left -->
+                          <div class="subcell-1" id="aev-realizadas">
+                            <p>??</p> <!-- Tests Made -->
+                          </div>
+                          <div class="subcell-1" id="aev-pendientes">
+                            <p>??</p> <!-- Tests Left -->
+                          </div>
+                        </div>
+                    
+                        <!-- Percentage Progress -->
+                        <div class="subcell-1" id="aev-avance">
+                          <p>66%</p> <!-- Example percentage -->
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="ave-row" id="ave-row">
+                      <div class="ave-tb-cell a-1"><p id="aev-grado">?</p></div>
+                      <div class="ave-tb-cell a-2"><p id="aev-grupos">?</p></div>
+                      <div class="ave-tb-cell a-2"><p id="aev-alumnos">?</p></div>
+                      <div class="ave-tb-cell a-3">
+                        <div class="gpo-subcell">
+                          <!-- Progress Bar, positioned behind the cells -->
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                          </div>
+                          
+                          <!-- Tests Made and Tests Left -->
+                          <div class="subcell-1" id="aev-realizadas">
+                            <p>??</p> <!-- Tests Made -->
+                          </div>
+                          <div class="subcell-1" id="aev-pendientes">
+                            <p>??</p> <!-- Tests Left -->
+                          </div>
+                        </div>
+                    
+                        <!-- Percentage Progress -->
+                        <div class="subcell-1" id="aev-avance">
+                          <p>66%</p> <!-- Example percentage -->
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="ave-row" id="ave-row">
+                      <div class="ave-tb-cell a-1"><p id="aev-grado">?</p></div>
+                      <div class="ave-tb-cell a-2"><p id="aev-grupos">?</p></div>
+                      <div class="ave-tb-cell a-2"><p id="aev-alumnos">?</p></div>
+                      <div class="ave-tb-cell a-3">
+                        <div class="gpo-subcell">
+                          <!-- Progress Bar, positioned behind the cells -->
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                          </div>
+                          
+                          <!-- Tests Made and Tests Left -->
+                          <div class="subcell-1" id="aev-realizadas">
+                            <p>??</p> <!-- Tests Made -->
+                          </div>
+                          <div class="subcell-1" id="aev-pendientes">
+                            <p>??</p> <!-- Tests Left -->
+                          </div>
+                        </div>
+                    
+                        <!-- Percentage Progress -->
+                        <div class="subcell-1" id="aev-avance">
+                          <p>66%</p> <!-- Example percentage -->
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="ave-row" id="ave-row">
+                      <div class="ave-tb-cell a-1"><p id="aev-grado">?</p></div>
+                      <div class="ave-tb-cell a-2"><p id="aev-grupos">?</p></div>
+                      <div class="ave-tb-cell a-2"><p id="aev-alumnos">?</p></div>
+                      <div class="ave-tb-cell a-3">
+                        <div class="gpo-subcell">
+                          <!-- Progress Bar, positioned behind the cells -->
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                          </div>
+                          
+                          <!-- Tests Made and Tests Left -->
+                          <div class="subcell-1" id="aev-realizadas">
+                            <p>??</p> <!-- Tests Made -->
+                          </div>
+                          <div class="subcell-1" id="aev-pendientes">
+                            <p>??</p> <!-- Tests Left -->
+                          </div>
+                        </div>
+                    
+                        <!-- Percentage Progress -->
+                        <div class="subcell-1" id="aev-avance">
+                          <p>66%</p> <!-- Example percentage -->
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="ave-row" id="ave-row">
+                      <div class="ave-tb-cell a-1"><p id="aev-grado">?</p></div>
+                      <div class="ave-tb-cell a-2"><p id="aev-grupos">?</p></div>
+                      <div class="ave-tb-cell a-2"><p id="aev-alumnos">?</p></div>
+                      <div class="ave-tb-cell a-3">
+                        <div class="gpo-subcell">
+                          <!-- Progress Bar, positioned behind the cells -->
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                          </div>
+                          
+                          <!-- Tests Made and Tests Left -->
+                          <div class="subcell-1" id="aev-realizadas">
+                            <p>??</p> <!-- Tests Made -->
+                          </div>
+                          <div class="subcell-1" id="aev-pendientes">
+                            <p>??</p> <!-- Tests Left -->
+                          </div>
+                        </div>
+                    
+                        <!-- Percentage Progress -->
+                        <div class="subcell-1" id="aev-avance">
+                          <p>66%</p> <!-- Example percentage -->
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="ave-row" id="ave-row">
+                      <div class="ave-tb-cell a-1"><p id="aev-grado">?</p></div>
+                      <div class="ave-tb-cell a-2"><p id="aev-grupos">?</p></div>
+                      <div class="ave-tb-cell a-2"><p id="aev-alumnos">?</p></div>
+                      <div class="ave-tb-cell a-3">
+                        <div class="gpo-subcell">
+                          <!-- Progress Bar, positioned behind the cells -->
+                          <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                          </div>
+                          
+                          <!-- Tests Made and Tests Left -->
+                          <div class="subcell-1" id="aev-realizadas">
+                            <p>??</p> <!-- Tests Made -->
+                          </div>
+                          <div class="subcell-1" id="aev-pendientes">
+                            <p>??</p> <!-- Tests Left -->
+                          </div>
+                        </div>
+                    
+                        <!-- Percentage Progress -->
+                        <div class="subcell-1" id="aev-avance">
+                          <p>66%</p> <!-- Example percentage -->
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <!--TERMINA FILA-->
+                  </div>
+                  <!--TERMINA CONTENIDO DE TABLA-->
+                </div>
+              </div>
+            </div>
+            <!-- TERMINA CUERPO DE WIDGET -->
+            <!-- INICIA CUERPO DE WIDGET -->
+            <div class="widget-body">
+              <div class="widget-title">
+                <div class="widget-title-text">
+                  <h2>Actividad usuarios de consulta</h2>
+                </div>
+                <div class="cm-container">
+                    <div class="widget-context-menu-icon">
+                      <svg class="cm-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                      </svg>
+                      <div class="menu-contextual-container">
+                        <ul class="menu-contextual">
+                          <li><a href="">opción 1</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="widget-content">
+                <div class="w-actuser-container">
+                  <div class="actuser-gpo">
+                    <div class="actuser-row">
+                      <div class="au-cell  au-col-a"></div>
+                      <div class="au-cell au-cell-b au-col-b"><p>+ Consultas</p></div>
+                    </div>
+                    <div class="actuser-row">
+                      <div class="au-cell au-cell-b au-col-a">1</div>
+                      <div class="au-cell au-cell-b au-col-b">1</div>
+                    </div>
+                    <div class="actuser-row">
+                      <div class="au-cell au-cell-b au-col-a">1</div>
+                      <div class="au-cell au-cell-b au-col-b">1</div>
+                    </div>
+                    <div class="actuser-row">
+                      <div class="au-cell au-cell-b au-col-a">1</div>
+                      <div class="au-cell au-cell-b au-col-b">1</div>
+                    </div>
+                  </div>
+                  <div class="actuser-gpo">
+                    <div class="actuser-row">
+                      <div class="au-cell  au-col-a"></div>
+                      <div class="au-cell au-cell-b au-col-b"><p>- Consultas</p></div>
+                    </div>
+                    <div class="actuser-row">
+                      <div class="au-cell au-cell-b au-col-a">1</div>
+                      <div class="au-cell au-cell-b au-col-b">1</div>
+                    </div>
+                    <div class="actuser-row">
+                      <div class="au-cell au-cell-b au-col-a">1</div>
+                      <div class="au-cell au-cell-b au-col-b">1</div>
+                    </div>
+                    <div class="actuser-row">
+                      <div class="au-cell au-cell-b au-col-a">1</div>
+                      <div class="au-cell au-cell-b au-col-b">1</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TERMINA CUERPO DE WIDGET -->
+          </div>
+          <!-- TERMINA FILA DE WIDGETS -->
+          <!-- INICIA FILA DE WIDGETS -->
+          <div class="widget-row">
+            <!-- INICIA CUERPO DE WIDGET -->
+            <div class="widget-body">
+              <div class="widget-title">
+                <div class="widget-title-text">
+                  <h2>Créditos - Visión global</h2>
+                </div>
+                <div class="cm-container">
+                    <div class="widget-context-menu-icon">
+                      <svg class="cm-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                      </svg>
+                      <div class="menu-contextual-container">
+                        <ul class="menu-contextual">
+                          <li><a href="">opción 1</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="widget-content">
+                <div class="w-creditos-g-container">
+                  <div class="cred-g-row tab-h">
+                    <div class="h-cell"></div>
+                    <div class="h-cell cell-g"><p>Activos</p></div>
+                    <div class="h-cell cell-r"><p>Por expirar</p></div>
+                  </div>
+                  <div class="cred-g-row tab-c">
+                    <div class="c-cell cell-o"><p>Evaluaciones</p></div>
+                    <div class="c-cell cell-b"><p id="cred-g-content">???</p></div>
+                    <div class="c-cell cell-b"><p id="cred-g-content">???</p></div>
+                  </div>
+                  <div class="cred-g-row tab-c">
+                    <div class="c-cell cell-o"><p>Entrenamientos</p></div>
+                    <div class="c-cell cell-b"><p id="cred-g-content">???</p></div>
+                    <div class="c-cell cell-b"><p id="cred-g-content">???</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TERMINA CUERPO DE WIDGET -->
+            <!-- INICIA CUERPO DE WIDGET -->
+            <div class="widget-body-wide">
+              <div class="widget-title">
+                <div class="widget-title-text">
+                  <h2>Detalle de créditos</h2>
+                </div>
+                <div class="cm-container">
+                    <div class="widget-context-menu-icon">
+                      <svg class="cm-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                      </svg>
+                      <div class="menu-contextual-container">
+                        <ul class="menu-contextual">
+                          <li><a href="">opción 1</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="widget-content">
+                <div class="w-credetalle-container">
+                  <!--INICIA CONTROLES DE SELECCION-->
+                  <div class="crd-row">
+                    <div class="crd-header">
+                      <div class="crd-h-control">
+                        <div class="select-gpo">
+                          <select name="crd-tipovista">
+                            <option value="tag1">Tipo de vista</option>
+                            <option value="institucion" selected>Institución</option>
+                            <option value="campus">Campus</option>
+                          </select>
+                          <select name="crd-periodo">
+                            <option value="tag1">Selecciona periodo</option>
+                            <option value="periodo2" selected>2023 - 2024</option>
+                            <option value="periodo1">2022 - 2023</option>
+                          </select>
+                        </div>
+                        <div class="sel-da">
+                          <input id="tab01" value="Tablero Estratégico" class="radio__input_da" type="radio" name="selButton">
+                          <label for="tab01" class="radio__label_da">Disponibles</label>
+
+                          <input id="tab04" value="Tablero Gold Mine" class="radio__input_da" type="radio" name="selButton">
+                          <label for="tab04" class="radio__label_da">Asignados</label>
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                  <!--TERMINA CONTROLES DE SELECCION-->
+                  <!--INICIA CONTENEDOR DEL HEADER DE LA TABLA-->
+                  <div class="tb-header" id="tb-header-container">
+                    <!--INICIA FILA DE ETIQUETAS PARA COLUMNAS-->
+                    <div class="crd-row">
+                      <div class="crd-tb-tags">
+                        <div class="crd-tb-cell c-3"></div>
+                        <div class="crd-tb-cell c-2 bg-0"></div>
+                        <div class="crd-tb-cell c-2"><p>Evaluaciones</p></div>
+                        <div class="crd-tb-cell c-2"><p>Entrenamientos</p></div>
+                      </div>
+                    </div>
+                      <!--INICIA FILA DE ETIQUETAS PARA COLUMNAS AZULES-->
+                      <div class="crd-row-tags row-fw">
+                        <div class="crd-tb-cell c-3" ><p>Grado</p></div>
+                        <div class="crd-tb-cell c-3" ><p># Grupos</p></div>
+                        <div class="crd-tb-cell c-3" ><p>Alumnos</p></div>
+                        <div class="crd-tb-cell c-3" ><p>Por Contestar</p></div>
+                        <div class="crd-tb-cell c-3" ><p>Asignadas</p></div>
+                        <div class="crd-tb-cell c-3" ><p>Por Contestar</p></div>
+                        <div class="crd-tb-cell c-3" ><p>Asignadas</p></div>
+                      </div>
+                      <!--TERMINA FILA DE ETIQUETAS PARA COLUMNAS AZULES-->
+                  </div>
+                  <!--TERMINA CONTENEDOR DEL HEADER DE LA TABLA-->
+                  <!--INICIA FILA DE ETIQUETAS PARA COLUMNAS-->
+                  <!--INICIA CONTENIDO DE TABLA-->
+                  <div class="crd-tb-content">
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-ins-row">
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grado">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grupos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-alumnos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-as">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-as">?</p></div>
+                    </div>
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-ins-row">
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grado">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grupos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-alumnos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-as">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-as">?</p></div>
+                    </div>
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-ins-row">
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grado">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grupos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-alumnos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-as">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-as">?</p></div>
+                    </div>
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-ins-row">
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grado">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grupos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-alumnos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-as">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-as">?</p></div>
+                    </div>
+                    <!--TERMINA FILA-->
+                    <!--INICIA FILA-->
+                    <div class="crd-row" id="cred-ins-row">
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grado">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-grupos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-alumnos">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-ev-as">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-pc">?</p></div>
+                      <div class="crd-tb-cell c-3" ><p id="cred-ins-en-as">?</p></div>
+                    </div>
+                    <!--TERMINA FILA-->
+                    
+                    
+                  </div>
+                  <!--TERMINA CONTENIDO DE TABLA-->
+                </div>
+              </div>
+            </div>
+            <!-- TERMINA CUERPO DE WIDGET -->
+          </div>
+          <!-- TERMINA FILA DE WIDGETS -->
+        </div>
+
+        <div class="tablero-container" id="tablero03">
+          <!-- INICIA FILA DE WIDGETS -->
+          <div class="widget-row">
+            <!-- INICIA CUERPO DE WIDGET -->
+            <div class="widget-body">
+              <div class="widget-title">
+                <div class="widget-title-text">
+                  <h2>Herramienta del mes</h2>
+                </div>
+                <div class="cm-container">
+                    <div class="widget-context-menu-icon">
+                      <svg class="cm-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                      </svg>
+                      <div class="menu-contextual-container">
+                        <ul class="menu-contextual">
+                          <li><a href="">opción 1</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="widget-content">
+                <div class="w-hm-container">
+                  <div class="titulo-hm">
+                    <p id="titulo-herramientames">Sociograma</p>
+                  </div>
+                    <div class="gpo_btn_hm">
+                      <a href="">
+                        <div class="btn-w3">
+                          <p>Tutorial</p>
+                        </div>
+                      </a>
+                      <a href="">
+                        <div class="btn-w3">
+                          <p>Acceso a la herramienta</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="contacto-hm">
+                      <p>Contacte a su Ejecutivo para más información.</p>
+                      <a href="">
+                        <div class="btn-contacto-hm">
+                          <img src="img/icons/contacto-hm.svg" alt="">
+                        </div>
+                      </a>
+                    </div>
+
+                    
+
+                </div>
+              </div>
+            </div>
+            <!-- TERMINA CUERPO DE WIDGET -->
+            <!-- INICIA CUERPO DE WIDGET -->
+            <div class="widget-body">
+              <div class="widget-title">
+                <div class="widget-title-text">
+                  <h2>Accesos directos</h2>
+                </div>
+                <div class="cm-container">
+                    <div class="widget-context-menu-icon">
+                      <svg class="cm-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                      </svg>
+                      <div class="menu-contextual-container">
+                        <ul class="menu-contextual">
+                          <li><a href="">opción 1</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="widget-content">
+                <div class="w-accdir-container">
+                  <a href="">
+                    <div class="btn-w2">
+                      <div class="btn-w1-content">
+                        <img src="img/icons/mineria.svg" alt="">
+                        <p>Mineria de datos: Estadísticas de referencia</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="btn-w2">
+                      <div class="btn-w1-content">
+                        <img src="img/icons/report.svg" alt="">
+                        <p>Reporte institucional</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="btn-w2">
+                      <div class="btn-w1-content">
+                        <img src="img/icons/calendar.svg" alt="">
+                        <p>Configuración de <br> fechas de aplicación</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- TERMINA CUERPO DE WIDGET -->
+            <!-- INICIA CUERPO DE WIDGET -->
+            <div class="widget-body">
+              <div class="widget-title">
+                <div class="widget-title-text">
+                  <h2>Material de apoyo</h2>
+                </div>
+                <div class="cm-container">
+                    <div class="widget-context-menu-icon">
+                      <svg class="cm-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                      </svg>
+                      <div class="menu-contextual-container">
+                        <ul class="menu-contextual">
+                          <li><a href="">opción 1</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="widget-content">
+                <div class="w-matapoyo-container">
+                  <a href="">
+                    <div class="btn-w1">
+                      <div class="btn-w1-content">
+                        <img src="img/icons/faq.svg" alt="">
+                        <p>Preguntas frecuentes</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="btn-w1">
+                      <div class="btn-w1-content">
+                        <img src="img/icons/tutoriales.svg" alt="">
+                        <p>Tutoriales</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="btn-w1">
+                      <div class="btn-w1-content">
+                        <img src="img/icons/material_interpretacion.svg" alt="">
+                        <p>Material de interpretación</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="btn-w1">
+                      <div class="btn-w1-content">
+                        <img src="img/icons/ideas_estrategicas.svg" alt="">
+                        <p>Ideas estratégicas</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="">
+                    <div class="btn-w1">
+                      <div class="btn-w1-content">
+                        <img src="img/icons/manual_instrumento.svg" alt="">
+                        <p>Manual de instrumento</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- TERMINA CUERPO DE WIDGET -->
+          </div>
+          <!-- TERMINA FILA DE WIDGETS -->
+
+        </div>
+
+        <div class="tablero-container" id="tablero04">
+          <!-- INICIA FILA DE WIDGETS -->
+          <div class="widget-row">
+            <!-- INICIA CUERPO DE WIDGET -->
+            <div class="widget-body-full">
+              <div class="widget-title">
+                <div class="widget-title-text">
+                  <h2>Nombre de Widget</h2>
+                </div>
+                <div class="cm-container">
+                    <div class="widget-context-menu-icon">
+                      <svg class="cm-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                      </svg>
+                      <div class="menu-contextual-container">
+                        <ul class="menu-contextual">
+                          <li><a href="">opción 1</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                          <li><a href="">opción 2</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="widget-content-full">
+              </div>
+            </div>
+            <!-- TERMINA CUERPO DE WIDGET -->
+          </div>
+          <!-- TERMINA FILA DE WIDGETS -->
+        </div>
+        
+
+        
+      </div>
+    </div>
+  </main>
+  <footer class="lx-db-footer">
+    <div class="lx-db-footer-content">
+      <div class="lx-db-footer__element">LEXIUM ® 2024. Todos los derechos reservados.</div>
+      <div class="lx-db-footer__element">Aviso de Privacidad</div>
+      <div class="lx-db-footer__element">Términos y Condiciones</div>
+    </div>
+  </footer>
+ </div>
+  
+</body>
+<script>
+// Function to handle seamless tab switching with fade effect
+function switchTablero(event) {
+  // Get the clicked radio button's ID (e.g., "tab01", "tab02", etc.)
+  const targetTabId = event.target.id;
+
+  // Map the input IDs to the tablero div IDs
+  const tableroMap = {
+    tab01: 'tablero01',
+    tab02: 'tablero02',
+    tab03: 'tablero03'
+  };
+
+  // Determine which tablero to show
+  const targetTableroId = tableroMap[targetTabId];
+
+  // Get all tableros
+  const tableros = document.querySelectorAll('.tablero-container');
+
+  // Get the currently active tablero
+  const currentTablero = document.querySelector('.tablero-container.active');
+
+  // If there's an active tablero, start fading it out
+  if (currentTablero && currentTablero.id !== targetTableroId) {
+    currentTablero.classList.remove('active'); // Remove active to start fade-out
+  }
+
+  // Fade in the new selected tablero
+  const newTablero = document.getElementById(targetTableroId);
+  newTablero.classList.add('active'); // Add active to start fade-in
+}
+
+// Attach event listeners to the radio inputs
+document.getElementById('tab01').addEventListener('change', switchTablero);
+document.getElementById('tab02').addEventListener('change', switchTablero);
+document.getElementById('tab03').addEventListener('change', switchTablero);
+
+
+// Initialize: Show the first tablero on page load
+document.getElementById('tab01').checked = true; // Set the first tab as checked
+document.getElementById('tablero01').classList.add('active'); // Mark the first tablero as active
+
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  // Get all parent li elements that contain a submenu
+  const navItems = document.querySelectorAll('.lx-db-nav-ul li');
+
+  // Function to toggle submenu visibility
+  function toggleMenuVisibility(event) {
+    // Prevent the default behavior (if using anchor links)
+    event.preventDefault();
+
+    // Close all open submenus first
+    navItems.forEach(item => {
+      item.classList.remove('menu-visible');
+    });
+
+    // Open the clicked submenu
+    event.currentTarget.classList.add('menu-visible');
+  }
+
+  // Attach event listeners to all nav items
+  navItems.forEach(item => {
+    // Check if the nav item has a submenu (i.e., a .menu-vertical-container inside)
+    if (item.querySelector('.menu-vertical-container')) {
+      // Add click event listener for touch devices
+      item.addEventListener('click', toggleMenuVisibility);
+    }
+  });
+
+  // Close the menu if clicking outside
+  document.addEventListener('click', function(event) {
+    // If the click is outside the nav menu
+    if (!event.target.closest('.lx-db-nav-ul')) {
+      navItems.forEach(item => {
+        item.classList.remove('menu-visible');
+      });
+    }
+  });
+});
+
+</script>
+
+
+
+<script>
+  // VALORES DE TEST REALIZADOS Y TEST PENDIENTES
+  const testsMade = 15;
+  const testsLeft = 5;
+  const totalTests = testsMade + testsLeft;
+  
+  // CALCULO DEL PORCENTAJE DE AVANCE
+  const progressPercentage = (testsMade / totalTests) * 100;
+  
+  // MODIFICA LA BARRA DE PROGRESO VERDE BASADO EN EL PORCENTAJE OBTENIDO
+  document.getElementById('progress-bar').style.width = progressPercentage + '%';
+  
+  // Optionally, update the displayed percentage if necessary
+  document.getElementById('aev-avance').innerHTML = `<p>${Math.round(progressPercentage)}%</p>`;
+  
+  </script>
+</html>
