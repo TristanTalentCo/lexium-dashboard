@@ -1038,15 +1038,96 @@ textarea {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: red;
+  margin-top: 15px;
+  margin-bottom: 18px;
+}
+.graf-control select{
+  width: 20ch;
+  font-size: 14px;
+  padding: 6px 0;
+
+}
+.graf-gp-container {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
+
+.graf-group {
+  width: 280px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  margin-bottom: 28px;
 }
 .graf-visual{
-  width: 100%;
+  width: 255px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4px;
+
 }
+
+.graf-markers{
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+
+}
+
+.mk-2, .mk-3, .mk-4{
+  position: absolute;
+  top:0;
+}
+.mk-4{
+  left: 254px;
+}
+.marker{
+  width:25px;
+  height: 25px ;
+  border-radius: 5px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mk-white{
+  background-color: var(--lx-mk-w);
+  border: 1px solid grey;
+}
+.mk-yellow{
+  background-color: var(--lx-mk-y);
+}
+.mk-green{
+  background-color: var(--lx-mk-g);
+}
+.mk-greyblue{
+  background-color: var(--lx-mk-gb);
+  color: var(--lx_grey-main);
+}
+/* Ensure the graf-indicator is absolutely positioned above the graf-group */
+.graf-ind {
+  position: absolute;
+  top: 0; /* Align it at the top of the graf-group */
+  z-index: 2; /* Make sure it's above the graf-group */
+  width: 25px;
+  height: 193px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
