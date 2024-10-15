@@ -261,6 +261,7 @@ body {
   width: 220px;
   background-color: var(--lx-widget-btn1) !important;
   padding: 10px 0;
+  box-shadow:  rgba(0, 0, 0, 0.3) 0px 3px 3px 0px ;
 }
 
 
