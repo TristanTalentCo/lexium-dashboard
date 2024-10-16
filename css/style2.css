@@ -1,0 +1,51 @@
+.w-mesas-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:100%;
+    background-color: darkslategrey;
+}
+.mesas-control{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 695px;
+    height: 172px;
+    background-color: gray;
+}
+.mesas-area-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 695px;
+    height: 448px;
+    background-color: rgb(163, 82, 82);
+}
+.mesas-escritorios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+}
+.row-escritorios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+}
+.escritorio-grupo{
+    display: flex;
+    width: 115px;
+    height: 100px;
+    background-color: cornflowerblue;
+}
