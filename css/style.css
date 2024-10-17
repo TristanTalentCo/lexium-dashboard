@@ -639,6 +639,7 @@ textarea {
 }
 .select-gpo select{
   border-radius: 4px;
+  height: 28px;
   color: var(--lx-widget-title-bluegray);
   
 }
@@ -770,6 +771,7 @@ textarea {
   flex-direction: row;
   justify-content: space-between;
   width: 95%;
+  height: 28px;
 }
 
 
