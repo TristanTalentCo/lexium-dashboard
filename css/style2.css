@@ -102,6 +102,43 @@
 .mesas-cajas-seleccion a{
     text-decoration: none;
 }
+
+.mesas-sel-eval-row{
+    display: flex;
+    flex-direction: row;
+}
+.radio__input_mesaEval{
+    display: none;
+  }
+.radio__label_mesaEval{
+    width:45px;
+    height:44px;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lx-tb-blue2);
+    border-radius: 2px;
+    color: var(--lx-blue-third, #5B6B96);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+.radio__label_mesaEval img{
+    width: 32px;
+}
+  .radio__label_mesaEval:not(:last-of-type){
+    
+  }
+  
+  .radio__input_mesaEval:checked + .radio__label_mesaEval{
+    background: var(--lx-blue-third, #5B6B96);
+    color: var(--lx_grey-main);
+  }
 .mesas-btn{
     width: 130px;
     height: 33px;
