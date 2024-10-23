@@ -226,6 +226,17 @@ textarea {
   border-radius: 8px;
   background: var(--lx-gray-widget);
 }
+.widget-body-video{
+  display: flex;
+  width: 723px;
+  padding: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+  border-radius: 8px;
+  background: var(--lx-gray-widget);
+  box-shadow: rgba(0,0,0,.2) 12px 12px 8px 0px
+}
 .widget-body-4{
   display: flex;
   width: 723px;
@@ -383,6 +394,17 @@ textarea {
 .widget-content-full{
   width: 723px;
   height: 655px;
+  align-self: stretch;
+  border-radius: 4px;
+  background: #F4F4F4;
+}
+.widget-content-video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 723px;
+  height: 407px;
   align-self: stretch;
   border-radius: 4px;
   background: #F4F4F4;
@@ -950,7 +972,7 @@ textarea {
 }
 .btn-w1{
   width: 342px;
-  height: 54px;
+  height: 70px;
   display: flex;
   flex-direction: row;
   align-items: center;
