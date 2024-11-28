@@ -404,7 +404,7 @@ textarea {
   align-items: center;
   justify-content: center;
   width: 723px;
-  height: 407px;
+  min-height: 407px;
   align-self: stretch;
   border-radius: 4px;
   background: #F4F4F4;
