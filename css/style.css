@@ -569,10 +569,10 @@ textarea {
  background-color: #F2B3B3; 
 }
 .cell-o{
- background-color: #FACE8C; 
+ background-color: var(--lx-tb-header-orange2); 
 }
 .cell-b{
- background-color: #DBE3F8; 
+ background-color: var(--lx-tb-blue1); 
 }
 
 .cell-b p{
@@ -978,7 +978,7 @@ textarea {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background-color: var(--lx-widget-btn1);
+  background-color: var(--lx-widget-btn2);
 }
 .btn-w1-content{
   display: flex;
@@ -998,7 +998,7 @@ textarea {
   color: white;
 }
 .btn-w1:hover{
-  background-color: var(--lx-widget-btn1-hover);
+  background-color: var(--lx-widget-btn2-hover);
 }
 
 
@@ -1026,7 +1026,7 @@ textarea {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background-color: var(--lx-widget-btn1);
+  background-color: var(--lx-widget-btn2);
 }
 .btn-w2-content{
   display: flex;
@@ -1045,7 +1045,7 @@ textarea {
   color: white;
 }
 .btn-w2:hover{
-  background-color: var(--lx-widget-btn1-hover);
+  background-color: var(--lx-widget-btn2-hover);
 }
 
 /* CONTENIDO WIDGET HERRAMIENTA DEL MES */
@@ -1088,7 +1088,7 @@ textarea {
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  background-color: var(--lx-widget-btn1);
+  background-color: var(--lx-widget-btn2);
 }
 
 .btn-w3 p{
@@ -1097,7 +1097,7 @@ textarea {
   color: white;
 }
 .btn-w3:hover{
-  background-color: var(--lx-widget-btn1-hover);
+  background-color: var(--lx-widget-btn2-hover);
 }
 
 .contacto-hm{
@@ -1121,10 +1121,10 @@ textarea {
   justify-content: center;
   align-items: center;
   border-radius: 16px;
-  background-color: var(--lx-widget-btn1);
+  background-color: var(--lx-widget-btn2);
 }
 .btn-contacto-hm:hover {
-  background-color: var(--lx-widget-btn1-hover);
+  background-color: var(--lx-widget-btn2-hover);
 }
 .btn-contacto-hm img{
   height: 32px;
@@ -1396,11 +1396,11 @@ textarea {
   font-size: 12px;
   font-weight: bold;
   color: var(--lx_grey-main);
-  background-color: var(--lx-widget-btn1);
+  background-color: var(--lx-widget-btn2);
   border-radius: 12px;
 }
 .mesas-btn:hover{
-  background-color: var(--lx-widget-btn1-hover);
+  background-color: var(--lx-widget-btn2-hover);
 }
 .mesas-btn p{
   margin: 0;

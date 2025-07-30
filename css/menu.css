@@ -3,18 +3,20 @@
 
 /* VARIABLES PARA LA NUEVA PALETA DE COLORES LEXIUM 2024 */
 :root {
---lx-main-background: #252638;
+--lx-main-background: #002040;
 --lx-widget-title-bluegray:#5D5E6D;
 --lx-widget-light-bluegray:#c4c5d4;
---lx-widget-btn1:#586AAA;
---lx-widget-btn1-hover:#2C3659;
+--lx-widget-btn1:#0554F2;
+--lx-widget-btn1-hover:#033593;
+--lx-widget-btn2:#00326E;
+--lx-widget-btn2-hover:#33669E;
 --lx-widget-tablecell:#DBE3F8;
---lx-blue-third:#5B6B96;
+--lx-blue-third:#6690C3;
 --lx_grey-main:#F0F0F0;
---lx-gray-widget:#EED9B9;
---lx-gray-widget-shadow:#d79633;
---lx-gray-widget-contextmenu-hover:#ecc589;
---lx-blue-main:#2C318D;
+--lx-gray-widget:#FFD2B3;
+--lx-gray-widget-shadow:#d7953300;
+--lx-gray-widget-contextmenu-hover:#FFD2B3;
+--lx-blue-main:#0444C2;
 /*widget colors*/
 
 --lx-gray-text-main:#3F3F3F;
@@ -32,10 +34,10 @@
 --lx-purple-table-btn-hover:#54386d;
 --lx-purple-table-btn-active:#ca7ce2;
 
---lx-tb-header-orange1: #F2C37B;
---lx-tb-header-orange2: #FACE8C;
---lx-tb-blue1: #DBE3F8;
---lx-tb-blue2: #C2D0F4;
+--lx-tb-header-orange1: #FFE5D3;
+--lx-tb-header-orange2: #FFA066;
+--lx-tb-blue1: #D9E9FF;
+--lx-tb-blue2: #C3DBF9;
 
 --lx-mk-w: #fff;
 --lx-mk-y: #ECD400;
@@ -192,11 +194,11 @@ body {
   gap: 10px;
   color: var(--lx_grey-main);
   border-radius: 10px 10px 0px 0px;
-  background: var(--lx-widget-title-bluegray);
+  background: var(--lx-widget-btn2);
 }
 
 .lx-db-header-mid__alert:hover{
-  background: var(--lx-blue-third);
+  background: var(--lx-widget-btn2-hover);
   cursor: pointer;
 }
 
