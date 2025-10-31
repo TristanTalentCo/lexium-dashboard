@@ -12,7 +12,19 @@
    ========================================================================== */
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+          :root{
+            --border-opaque: rgba(0,0,0,0.2);
+            --text-dark: #444444;
+            --header-bg: #C2D0F4; /* tb header */
+            --row-a-bg: #DBE3F8;  /* first row */
+            --row-b-bg: #EAF0FF;  /* second row */
+            --atag-a: #A5C9FF;    /* a-tag first row */
+            --atag-b: #B6A5FF;    /* a-tag second row */
+            --white: #ffffff;
+            --gap: 16px;
+            font-family: 'Poppins', sans-serif;
+          }
 
 /*
  * Remove text-shadow in selection highlight:
@@ -237,6 +249,17 @@ textarea {
   background: var(--lx-gray-widget);
   box-shadow: rgba(0,0,0,.2) 12px 12px 8px 0px
 }
+.widget-body-pdf{
+  display: flex;
+  width: 950px;
+  padding: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 13px;
+  border-radius: 8px;
+  background: var(--lx-gray-widget);
+  box-shadow: rgba(0,0,0,.2) 12px 12px 8px 0px
+}
 .widget-body-4{
   display: flex;
   width: 723px;
@@ -403,8 +426,19 @@ textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 723px;
+  width: 100%;
   min-height: 407px;
+  align-self: stretch;
+  border-radius: 4px;
+  background: #F4F4F4;
+}
+.widget-content-pdf{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 550px;
   align-self: stretch;
   border-radius: 4px;
   background: #F4F4F4;
@@ -1501,6 +1535,249 @@ textarea {
 .bar-bg-d, .caja-d{
   background-color: var(--graf-bar-d);
 }
+
+
+/* ==========================================================================
+   STYLES SECCIONES INTERNAS
+   ========================================================================== */
+
+
+
+
+/* INFORMACION PARA INTERPRETACIÓN */
+
+
+
+          
+
+          .section-container{
+            max-width: 1140px;
+            width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding: 8px 30px;
+          }
+
+          .section-body{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-family: 'poppins', sans-serif;
+          }
+
+          /* Header */
+          .sec-header{
+            display: flex;
+            align-items: center;
+            gap: var(--gap);
+            border-bottom: 1px solid var(--border-opaque);
+            padding-bottom: 8px;
+          }
+          .sec-logo{
+            width: 90px;
+            height: 51px;
+            display: block;
+            
+            border-radius: 4px;
+            flex: 0 0 90px;
+          }
+          .sec-text{
+            display:flex;
+            flex-direction: column;
+            gap: 4px;
+          }
+          .sec-title{
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin: 0;
+          }
+          .sec-desc{
+            font-size: 14px;
+            color: var(--text-dark);
+            opacity: 0.95;
+            margin: 0;
+          }
+
+          /* Table-like container */
+          .sec-content{ width:100%; }
+          .sec-tb{
+            border: 1px solid var(--border-opaque);
+            border-radius: 8px;
+            overflow: hidden;
+            background: var(--white);
+            box-sizing: border-box;
+          }
+
+          /* Header row */
+          .sec-tb-header{
+            display: grid;
+            grid-template-columns: 120px 1fr 80px 150px 150px;
+            align-items: center;
+            background: var(--header-bg);
+            gap: 0;
+            border-bottom: 1px solid var(--border-opaque);
+            min-height: 30px;
+          }
+          .tb-h-col{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            height:30px;
+            padding-left: 0px;
+            box-sizing: border-box;
+            border-right: 1px solid var(--border-opaque);
+          }
+          .tb-h-col:last-child{
+            
+            border: none;
+          }
+          .tb-h-col.center{ justify-content: center; padding-left:0; }
+          .h-tag{
+            color: var(--text-dark);
+            font-size: 14px;
+            font-weight: 600;
+          }
+
+          /* Data rows (two example rows are included) */
+          .sec-tb-row{
+            display: grid;
+            grid-template-columns: 120px 1fr 80px 150px 150px;
+            border-bottom: 1px solid var(--border-opaque);
+            gap: 0;
+            align-items: stretch;
+            min-height: 120px;
+          }
+          .sec-tb-row:nth-child(odd){
+            background-color: var(--row-b-bg);
+          }
+          .sec-tb-row:nth-child(even){
+            background-color: var(--row-a-bg);
+          }
+          .sec-tb-row:last-child{
+            border: none ;
+          }
+
+          /* Column A (left small column with tag + big icon area) */
+          .tb-r-col-a{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            border-right: 1px solid var(--border-opaque);
+            box-sizing: border-box;
+          }
+          .a-tag{
+            width: 100%;
+            text-align: center;
+            display:flex;
+            align-items: center;
+            justify-content:center;
+            color: var(--text-dark);
+            font-weight:600;
+            font-size:13px;
+            line-height: 1;
+            padding: 6px 0;
+          }
+          .a-icon{
+            flex: 1;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            
+            min-height: 95px;
+          }
+          .a-icon img{
+            max-width: 90px;
+            max-height: 90px;
+            object-fit: contain;
+          }
+
+          /* Column B (main text) */
+          .tb-r-col-b{
+            padding: 16px;
+            box-sizing: border-box;
+            border-right: 1px solid var(--border-opaque);
+            display:flex;
+            align-items:center;
+          }
+          .tb-text{
+            color: var(--text-dark);
+            font-size: 15px;
+            line-height: 1.4;
+          }
+
+          /* Column C (duration) */
+          .tb-r-col-c{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            font-weight: 500;
+            border-right: 1px solid var(--border-opaque);
+            box-sizing: border-box;
+          }
+          .tb-duration{
+            color: var(--text-dark);
+            font-size: 14px;
+          }
+
+          /* Column D (controls row: ic-sel) */
+          .tb-r-col-d{
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            padding: 8px 0px;
+            box-sizing: border-box;
+            border-right: 1px solid var(--border-opaque);
+            gap: 8px;
+          }
+          .ic-sel{ display:flex; flex-direction:column; justify-content: center;gap:8px; }
+          .ic-row{ display:flex; gap:10px; align-items:center; }
+          .ic-cont{ width: 38px;display:flex;flex-direction: column ;align-items:center; justify-content:center; min-width:34px; }
+          .ic-tag{ font-size:10px; color:var(--text-dark); }
+
+          /* Column E (small selection group) */
+          .tb-r-col-e{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            
+            gap:16px;
+            box-sizing: border-box;
+          }
+
+          /* Row specific background overrides */
+          
+          .row-1 .a-tag{ background: var(--atag-a); }
+          
+          .row-2 .a-tag{ background: var(--atag-b); }
+
+          /* Small utilities */
+          .muted{ opacity: .9; color: var(--text-dark); font-size:13px; }
+          .center{ text-align:center; }
+          @media (max-width: 900px){
+            .sec-tb-header,
+            .sec-tb-row{
+              grid-template-columns: 80px 1fr 60px 100px 80px;
+            }
+            .section-container{ padding: 8px 16px; }
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes

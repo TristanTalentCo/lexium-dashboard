@@ -400,6 +400,105 @@ main{
 
 
 /* Media Query for Tablets (width between 768px and 1024px) */
+/* Media Query for Small Desktop Screens (width below 768px but above typical mobile) */
+@media (max-width: 1024px) and (min-width: 600px) {
+    .bluebar {
+        width: 5%;
+    }
+    .content-wrap {
+        width: 95%;
+        padding: 0 10px;
+    }
+    .info-group {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        justify-content: flex-start;
+    }
+    .texto-bienvenida {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .title-frame {
+        width: 100%;
+        padding-bottom: 10px;
+        justify-content: center;
+    }
+    .title-frame h2 {
+        font-size: 22px;
+        width: auto;
+        text-align: center;
+    }
+    .text-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .text-content p {
+        padding-top: 10px;
+        font-size: 14px;
+    }
+    .video-btn {
+        font-size: 16px;
+    }
+    .play-btn {
+        width: 160px;
+        height: 48px;
+    }
+    .play-btn img {
+        width: 28px;
+        height: 28px;
+    }
+    .play-btn h4 {
+        font-size: 14px;
+    }
+    .logo-bar {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+    .logo-institucion,
+    .logo-lexium {
+        width: 120px;
+    }
+    .login-frame {
+        width: 320px;
+        height: auto;
+        min-height: 340px;
+        padding: 10px 0;
+    }
+    .login-saludo {
+        padding: 20px 0 20px;
+    }
+    .login-form {
+        width: 100%;
+        padding-bottom: 8px;
+    }
+    .input-un input,
+    .input-pw input {
+        width: 180px;
+        font-size: 1rem;
+    }
+    .eye-pw {
+        width: 28px;
+        height: 28px;
+    }
+    .btn-inicio {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    .form-actions {
+        font-size: 12px;
+    }
+    .footer-content {
+        width: 95%;
+        font-size: 11px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
 @media (max-width: 1366px) and (min-width: 768px) {
     .bluebar{
         width: 7%;
@@ -445,7 +544,7 @@ main{
         width: 200px;
         height: 60px;
         border-radius: 50px;
-        background-color: #F78F20;
+        background-color: #F24405;
         color: #fff;
         cursor: pointer;
         -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
@@ -663,7 +762,7 @@ main{
         padding: 0;
         margin: 0;
         font-size: 42px;
-        color: #F78F20;
+        color: #F24405;
     }
     .saludo-hola h3{
         font-weight: 400;
