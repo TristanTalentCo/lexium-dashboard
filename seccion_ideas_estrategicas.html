@@ -1,0 +1,1508 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/docs.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+ <div class="lx-db-frame">
+  <header class="lx-db-header">
+    <div class="lx-db-header-top">
+      <div class="lx-header-top-content">
+        <div class="lx-db-header-top-logo"><img src = "img/logos/lexium-logo.svg" alt="Lexium"/></div>
+        <div class="lx-db-header-top-searchbar">
+          <div class="searchbar-container">
+            <div class="searchbar-icon"><img src = "img/icons/search.svg" alt="Buscar"/></div>
+            <div class="searchbar-input"><input type="text" placeholder="Buscar Alumno..."></div>
+          </div>
+        </div>
+        <div class="lx-db-header-top-mainicons">
+          <div class="mainicons-btn"><img src = "img/icons/home.svg" alt="Regresar al Inicio"/></div>
+          <div class="mainicons-btn"><img src = "img/icons/settings.svg" alt="Configuración"/></div>
+          <div class="mainicons-btn"><img src = "img/icons/help.svg" alt="Ayuda"/></div>
+          <div class="mainicons-btn"><img src = "img/icons/exit.svg" alt="Cerrar Sesión"/></div>
+        </div>
+      </div>
+    </div>
+    <div class="lx-db-header-mid">
+      <div class="lx-db-header-mid-content">
+        <div class="lx-db-header-mid__datehour">
+          <p>30 de diciembre 2024 22:00 hrs.</p>
+        </div>
+        <div class="lx-db-header-mid__institutionname">
+          <p>NOMBRE DE LA INSTITUCIÓN</p>
+        </div>
+        <div class="lx-db-header-mid__alert"><img src = "img/icons/bell.svg" alt="Alertas"/> <a href="">Alertas</a></div>
+      </div>
+    </div>
+    <div class="lx-db-header-nav">
+      <div class="lx-db-header-nav-content">
+        <nav class="lx-db-nav">
+          <ul class="lx-db-nav-ul">
+            <li class="lx-db-nav__btn">
+              <a href="">diagnósticos</a>
+            </li>
+            <li class="lx-db-nav__btn">
+              <a href="">administrar ▾</a>
+              <div class="menu-vertical-container">
+                <ul class="menu-vertical">
+                  <li><a href="">administrar campus</a></li>
+                  <li><a href="">administrar grupos / créditos</a></li>
+                  <li><a href="">administrar usuarios de consulta</a></li>
+                  <li><a href="">mover alumnos/grupos</a></li>
+                  <li><a href="">ingreso</a></li>
+                  <li><a href="">api docs</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="lx-db-nav__btn">
+              <a href="">interpretación</a>
+            </li>
+            <li class="lx-db-nav__btn">
+              <a href="">ideas estratégicas ▾</a>
+              <div class="menu-vertical-container">
+                <ul class="menu-vertical">
+                  <li><a href="">ideas estratégicas</a></li>
+                  <li><a href="">herramientas de aprendizaje</a></li>
+                  <li><a href="">información significativa</a></li>
+                  <li><a href="">aprendizaje es prosperidad</a></li>
+                  <li><a href="">audio pláticas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="lx-db-nav__btn">
+              <a href="">tutoriales</a>
+            </li>
+            <li class="lx-db-nav__btn">
+              <a href="">reporteador ▾</a>
+              <div class="menu-vertical-container">
+                <ul class="menu-vertical">
+                  <li><a href="">opción 1</a></li>
+                  <li><a href="">opción 2</a></li>
+                  <li><a href="">opción 3</a></li>
+                  <li><a href="">opción 4</a></li>
+                  <li><a href="">opción 5</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <main class="lx-db-main">
+    <div class="lx-db-main-content">
+      <div class="section-container">
+        <div class="section-body">
+          <header class="sec-header" role="banner">
+            <div class="sec-logo" aria-hidden="true"><img src="img/icons/icon_ideasestrategicas.png" alt=""></div>
+
+            <div class="sec-text">
+              <h2 class="sec-title">Ideas estratégicas</h2>
+              <p class="sec-desc">Haz clic en el área general que desees consultar.</p>
+            </div>
+          </header>
+        </div>
+      </div>
+      <div class="main-seleccion-tablero">
+        <div class="sel-tablero">
+          <input id="tab01" value="Tablero Estratégico" class="radio__input" type="radio" name="selDashboard">
+          <label for="tab01" class="radio__label">Áreas generales</label>
+          <input id="tab02" value="Tablero de Gestión" class="radio__input" type="radio" name="selDashboard">
+          <label for="tab02" class="radio__label">¿Cómo utilizar esta información?</label>
+          <input id="tab03" value="Tablero de Gestión" class="radio__input" type="radio" name="selDashboard">
+          <label for="tab03" class="radio__label">Ideas en acción</label>
+          <!--input id="tab04" value="Tablero Gold Mine" class="radio__input" type="radio" name="selDashboard">
+          <label for="tab04" class="radio__label">Tablero D</label-->
+        </div>
+
+
+      </div>
+      <div class="main-dashboard-area">
+        
+
+        <div class="tablero-container" id="tablero01">
+          <!-- INICIA FILA DE IDEAS ESTRATÉGICAS -->
+          <div class="ideas-row-container">
+              <!--  INICIA COLUMNA  -->
+              <div class="rep-col">
+                  <!-- INICIA INTELECTUALES -->
+                  <div class="accordion">
+                      <div class="accordion-item">
+                          <!-- INICIA REPORTE HEADER -->
+                          <button class="accordion-header" type="button">
+                              <i class="fa fa-chevron-down"></i>
+                              <div class="report-h-top">
+                                  <div class="r-h-info">
+                                      <div class="r-h-title" id="repNombre">Habilidades intelectuales</div>
+                                      
+                                  </div>
+                                  <div class="r-h-logo">
+                                      <img src="img/icon-materiales/intelectuales.png" alt="">
+                                  </div>
+                              </div>
+                          </button>
+                          <!-- TERMINA REPORTE HEADER -->
+                          <!-- INICIA REPORTE CONTENT -->
+                          <div class="accordion-body open">
+                              <!-- INICIA BLOQUE -->
+                              <div class="accordion-child">
+                                  <div class="accordion-child-header2 " >
+                                      <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item">Basico</a></div>
+                                                  <div class="b-icon-item">Medio</a></div>
+                                                  <div class="b-icon-item">Superior</a></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="accordion-child-body open">
+                                    <div class="tb-content" id="tcIa">
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Vocabulario</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Razonamiento lógico</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Analogías</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Orientación</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Seguimiento de instrucciones</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Planeación</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Juicio de conceptos</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Clasificación</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Conceptualización de hechos</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Discriminación visual</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Progresión numérica</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Aplicación de hechos</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                  </div>
+                                  </div>
+                              </div>
+                              <!-- TERMINA BLOQUE -->
+                          </div>
+                          <!-- TERMINA REPORTE CONTENT -->
+                      </div>
+                  </div>
+                  <!-- TERMINA INTELECTUALES -->
+                  
+                  
+              </div>
+              <!--  TERMINA COLUMNA  -->
+              <!--  INICIA COLUMNA  -->
+              <div class="rep-col">
+                  <!-- INICIA EMOCIONALES -->
+                  <div class="accordion">
+                      <div class="accordion-item">
+                          <!-- INICIA REPORTE HEADER -->
+                          <button class="accordion-header" type="button">
+                              <i class="fa fa-chevron-down"></i>
+                              <div class="report-h-top">
+                                  <div class="r-h-info">
+                                      <div class="r-h-title" id="repNombre">Habilidades emocionales</div>
+                                      
+                                  </div>
+                                  <div class="r-h-logo">
+                                      <img src="img/icon-materiales/emocionales.png" alt="">
+                                  </div>
+                              </div>
+                          </button>
+                          <!-- TERMINA REPORTE HEADER -->
+                          <!-- INICIA REPORTE CONTENT -->
+                          <div class="accordion-body open">
+                              <!-- INICIA BLOQUE -->
+                              <div class="accordion-child">
+                                  <div class="accordion-child-header2 " >
+                                      <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item">Basico</a></div>
+                                                  <div class="b-icon-item">Medio</a></div>
+                                                  <div class="b-icon-item">Superior</a></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="accordion-child-body open">
+                                    <div class="tb-content" id="tcIa">
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Autoconocimiento</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Autodominio</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Automotivación</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Autoestima</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Conciencia de los demás</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Compromiso</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Motivación</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Propensión al cambio</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Administración del tiempo</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Liderazgo</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Bienestar físico</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Manejo de la tensión</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Empatía</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                  </div>
+                                  </div>
+                              </div>
+                              <!-- TERMINA BLOQUE -->
+                          </div>
+                          <!-- TERMINA REPORTE CONTENT -->
+                      </div>
+                  </div>
+                  <!-- TERMINA EMOCIONALES -->
+              </div>
+              <!--  TERMINA COLUMNA  -->
+              <!--  INICIA COLUMNA  -->
+              <div class="rep-col">
+                  <!-- INICIA PREF APRENDIZAJE -->
+                  <div class="accordion">
+                      <div class="accordion-item">
+                          <!-- INICIA REPORTE HEADER -->
+                          <button class="accordion-header" type="button">
+                              <i class="fa fa-chevron-down"></i>
+                              <div class="report-h-top">
+                                  <div class="r-h-info">
+                                      <div class="r-h-title" id="repNombre">Preferencias de aprendizaje</div>
+                                      
+                                  </div>
+                                  <div class="r-h-logo">
+                                      <img src="img/icon-materiales/MPA.png" alt="">
+                                  </div>
+                              </div>
+                          </button>
+                          <!-- TERMINA REPORTE HEADER -->
+                          <!-- INICIA REPORTE CONTENT -->
+                          <div class="accordion-body open">
+                              <!-- INICIA BLOQUE -->
+                              <div class="accordion-child">
+                                  <div class="accordion-child-header2 " >
+                                      <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item">Basico</a></div>
+                                                  <div class="b-icon-item">Medio</a></div>
+                                                  <div class="b-icon-item">Superior</a></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="accordion-child-body open">
+                                    <div class="tb-content" id="tcIa">
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Preferencias visuales</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Preferencias auditivas</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Kinestésico</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Preferencias de interacción</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                  </div>
+                                  </div>
+                              </div>
+                              <!-- TERMINA BLOQUE -->
+                          </div>
+                          <!-- TERMINA REPORTE CONTENT -->
+                      </div>
+                  </div>
+                  <!-- TERMINA PREF APRENDIZAJE -->
+                  
+                  
+              </div>
+              <!--  TERMINA COLUMNA  -->
+          </div>
+          <!-- TERMINA FILA DE IDEAS ESTRATÉGICAS -->
+          <!-- INICIA FILA DE IDEAS ESTRATÉGICAS -->
+          <div class="ideas-row-container">
+              <!--  INICIA COLUMNA  -->
+              <div class="rep-col">
+                  <!-- INICIA INTELECTUALES -->
+                  <div class="accordion">
+                      <div class="accordion-item">
+                          <!-- INICIA REPORTE HEADER -->
+                          <button class="accordion-header" type="button">
+                              <i class="fa fa-chevron-down"></i>
+                              <div class="report-h-top">
+                                  <div class="r-h-info">
+                                      <div class="r-h-title" id="repNombre">Factores de liderazgo</div>
+                                      
+                                  </div>
+                                  <div class="r-h-logo">
+                                      <img src="img/icon-materiales/FL.png" alt="">
+                                  </div>
+                              </div>
+                          </button>
+                          <!-- TERMINA REPORTE HEADER -->
+                          <!-- INICIA REPORTE CONTENT -->
+                          <div class="accordion-body open">
+                              <!-- INICIA BLOQUE -->
+                              <div class="accordion-child">
+                                  <div class="accordion-child-header2 " >
+                                      <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item">Basico</a></div>
+                                                  <div class="b-icon-item">Medio</a></div>
+                                                  <div class="b-icon-item">Superior</a></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="accordion-child-body open">
+                                    <div class="tb-content" id="tcIa">
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Apertura</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Contacto personal</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Control</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Atención</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Desempeño</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Evaluación</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                  </div>
+                                  </div>
+                              </div>
+                              <!-- TERMINA BLOQUE -->
+                          </div>
+                          <!-- TERMINA REPORTE CONTENT -->
+                      </div>
+                  </div>
+                  <!-- TERMINA INTELECTUALES -->
+                  
+                  
+              </div>
+              <!--  TERMINA COLUMNA  -->
+              <!--  INICIA COLUMNA  -->
+              <div class="rep-col">
+                  <!-- INICIA EMOCIONALES -->
+                  <div class="accordion">
+                      <div class="accordion-item">
+                          <!-- INICIA REPORTE HEADER -->
+                          <button class="accordion-header" type="button">
+                              <i class="fa fa-chevron-down"></i>
+                              <div class="report-h-top">
+                                  <div class="r-h-info">
+                                      <div class="r-h-title" id="repNombre">7 factores</div>
+                                      
+                                  </div>
+                                  <div class="r-h-logo">
+                                      <img src="img/icon-materiales/7F.png" alt="">
+                                  </div>
+                              </div>
+                          </button>
+                          <!-- TERMINA REPORTE HEADER -->
+                          <!-- INICIA REPORTE CONTENT -->
+                          <div class="accordion-body open">
+                              <!-- INICIA BLOQUE -->
+                              <div class="accordion-child">
+                                  <div class="accordion-child-header2 " >
+                                      <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item">Basico</a></div>
+                                                  <div class="b-icon-item">Medio</a></div>
+                                                  <div class="b-icon-item">Superior</a></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="accordion-child-body open">
+                                    <div class="tb-content" id="tcIa">
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Persistencia</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Prudencia</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Consistencia</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Cooperación</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Atención</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">...</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">...</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                  </div>
+                                  </div>
+                              </div>
+                              <!-- TERMINA BLOQUE -->
+                          </div>
+                          <!-- TERMINA REPORTE CONTENT -->
+                      </div>
+                  </div>
+                  <!-- TERMINA EMOCIONALES -->
+              </div>
+              <!--  TERMINA COLUMNA  -->
+              <!--  INICIA COLUMNA  -->
+              <div class="rep-col">
+                  <!-- INICIA PREF APRENDIZAJE -->
+                  <div class="accordion">
+                      <div class="accordion-item">
+                          <!-- INICIA REPORTE HEADER -->
+                          <button class="accordion-header" type="button">
+                              <i class="fa fa-chevron-down"></i>
+                              <div class="report-h-top">
+                                  <div class="r-h-info">
+                                      <div class="r-h-title" id="repNombre">Hábitos</div>
+                                      
+                                  </div>
+                                  <div class="r-h-logo">
+                                      <img src="img/icon-materiales/Hábitos.png" alt="">
+                                  </div>
+                              </div>
+                          </button>
+                          <!-- TERMINA REPORTE HEADER -->
+                          <!-- INICIA REPORTE CONTENT -->
+                          <div class="accordion-body open">
+                              <!-- INICIA BLOQUE -->
+                              <div class="accordion-child">
+                                  <div class="accordion-child-header2 " >
+                                      <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item">Basico</a></div>
+                                                  <div class="b-icon-item">Medio</a></div>
+                                                  <div class="b-icon-item">Superior</a></div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  
+                                  <div class="accordion-child-body open">
+                                    <div class="tb-content" id="tcIa">
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Consistencia</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Persistencia</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Prudencia</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                      <!-- INICIA FILA -->
+                                      <div class="tb-row">
+                                        <div class="tb-row-grid">
+                                          <div class="tb-col-a">
+                                              <div id="tituloModulo">Cooperación</div>
+                                          </div>
+                                          <div class="tb-col-b">
+                                              <div class="b-icon-grid">
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                                  <div class="b-icon-item"><a href=""><img src="img/icons/ic-pdf.svg" alt=""></a></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <!-- TERMINA FILA -->
+                                  </div>
+                                  </div>
+                              </div>
+                              <!-- TERMINA BLOQUE -->
+                          </div>
+                          <!-- TERMINA REPORTE CONTENT -->
+                      </div>
+                  </div>
+                  <!-- TERMINA PREF APRENDIZAJE -->
+                  
+                  
+              </div>
+              <!--  TERMINA COLUMNA  -->
+          </div>
+          <!-- TERMINA FILA DE IDEAS ESTRATÉGICAS -->
+        </div>
+
+        <div class="tablero-container" id="tablero02">
+          <div class="sec-content">
+            <div class="ideas-row">
+              <div class="ideas_col">
+                <div class="i-txt-h">
+                  <h3>Lee esto antes de empezar</h3>
+                </div>
+
+                <div class="i-txt-p">
+                  <p>Realizar un proceso de evaluación en una institución educativa es, además de útil muy importante, porque permite visualizar en forma precisa y objetiva las fortalezas y áreas de oportunidad con las que se cuenta. Por supuesto evaluar en sí es una actividad que lleva consigo una gran responsabilidad.</p>
+                  <p>¿Cómo compartir los resultados? 
+                    <br>¿Qué hacer con la información que se genera? 
+                    <br>¿Qué actividades se requieren realizar para generar cambios en la dirección deseada en base a los resultados obtenidos? 
+                    <br>¿Cómo sacar el máximo provecho de la información que se presenta?</p>
+                </div>
+
+                <div class="i-txt-p">
+                  <p>El Diagnóstico de Perfil y Potencial de Aprendizaje (DPPA) presenta, dentro de sus propuestas, este documento que ahora estás analizando, llamado...</p>
+                  <img src="img/secciones/ie-logo.png" class="ie-logo" alt="Ideas Estratégicas">
+                  <p>En sus páginas encontrarás información que permite ahondar en los ¿Qué? y en los ¿Cómo? que se requieren para sacarle el máximo provecho a la gran cantidad de información que el DPPA incluye.</p>
+                </div>
+
+                <div class="i-txt-h">
+                  <h3>¿Qué hacer con la información recibida?</h3>
+                </div>
+
+                <div class="i-txt-p">
+                  <div class="three-col">
+                    <div class="t-col">
+                      <p>Después de una evaluación, sigue, por consecuencia, un diagnóstico.</p>
+                      <img src="img/secciones/ie-grafica.png" alt="Gráfica">
+                    </div>
+                    <div class="t-col">
+                      <p>Después de un diagnóstico, sigue, por consecuencia, una interpretación.</p>
+                      <img src="img/secciones/ie-mapco.png" alt="MAPCO">
+                    </div>
+                    <div class="t-col">
+                      <p>Después de una interpretación, la consecuencia lógica es que exista un cuestionamiento.</p>
+                      <img src="img/secciones/ie-mente.png" alt="Mente">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="i-txt-h">
+                  <h3>¿Qué hacer con la información que he recibido?</h3>
+                </div>
+
+                <div class="i-txt-p">
+                  <div class="two-col">
+                    <div class="col">
+                      <p>Este cuestionamiento convierte el conocimiento en acción y es muy importante. Si estas consultando este apartado denominado "Ideas Estratégicas" es porque deseas convertir en acción el proceso vivido con las evaluaciones MAPCO y con el Diagnóstico de Perfil y Potencial de Aprendizaje tanto en lo personal como en el de tus alumnos. Entonces ¡MANOS A LA OBRA!</p>
+                      <img src="img/secciones/ie-mapco.png" alt="MAPCO">
+                    </div>
+                    <div class="col">
+                      <img class="ie-skillmap" src="img/secciones/ie-skillmap.png" alt="Skill Map">
+                      <p>En este apartado encontrarás: Descripciones sobre las habilidades evaluadas. Propuestas pedagógicas que pueden ser implementadas dentro y fuera del aula, por todas las personas de cualquier edad.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="i-txt-h">
+                  <h3>¿Cómo utilizar al máximo las ideas estratégicas?</h3>
+                </div>
+
+                <div class="i-txt-p">
+                  <div class="two-col">
+                    <div class="col">
+                      <p>Lee, consulta, aprende y, después... Escoge algunas estrategias y trabaja en implementarlas. Avanza siempre... De lo sencillo a lo complicado. De lo general a lo particular.</p>
+                      <img src="img/secciones/ie-rubik.png" alt="Rubik">
+                    </div>
+                    <div class="col">
+                      <img src="img/secciones/ie-eval.png" alt="Evaluación">
+                      <p>1. Revisa con detenimiento las gráficas diagnósticas de PPA.<br>
+                         2. Ve los videos correspondientes a las evaluaciones realizadas.<br>
+                         3. Identifica las fortalezas y las áreas de oportunidad.<br>
+                         4. Haz clic en el área general que desees consultar.<br>
+                         5. Navega a través de dicha área, consultando la definición de cada habilidad y las ideas estratégicas relacionadas con la misma.<br>
+                         6. Cuando estés listo para convertir tu plan en acción, haz clic en IDEAS EN ACCIÓN.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <style>
+          .sec-content {
+            display: flex;
+            
+            width: 1136px;
+            padding: 16px 16px;
+          }
+
+          .ideas-row {
+            display: flex;
+            flex-direction: row;
+          }
+
+          .ideas_col {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 8px;
+            padding: 12px;
+          }
+
+          .i-txt-h {
+            margin-bottom: 10px;
+          }
+
+          .i-txt-h h3 {
+            color: #444;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 12px 24px;
+          }
+
+          .i-txt-p {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-top: 1px solid rgba(0,0,0,0.2);
+            padding: 12px 24px;
+            margin-bottom: 10px;
+            gap: 8px;
+          }
+
+          .i-txt-p p {
+            width: 50%;
+            color: #444;
+            line-height: 1.5;
+            margin-bottom: 1em;
+          }
+
+          .two-col, .three-col {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+          }
+
+          .two-col .col {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+          }
+
+          .three-col .col {
+            flex: 1;
+          }
+          .t-col {
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .ie-logo {
+            max-width: 322px;
+            margin: 12px auto;
+            display: block;
+          }
+          .ie-skillmap {
+            width: 223px;
+            height: 53px;
+          }
+          
+          </style>
+        </div>
+
+        <div class="tablero-container" id="tablero03">
+          <p>ideas en acción</p>
+        </div>
+
+        <div class="tablero-container" id="tablero04">
+          
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="lx-db-footer">
+    <div class="lx-db-footer-content">
+      <div class="lx-db-footer__element">LEXIUM ® 2024. Todos los derechos reservados.</div>
+      <div class="lx-db-footer__element">Aviso de Privacidad</div>
+      <div class="lx-db-footer__element">Términos y Condiciones</div>
+    </div>
+  </footer>
+ </div>
+  
+</body>
+<script>
+// Function to handle seamless tab switching with fade effect
+function switchTablero(event) {
+  // Get the clicked radio button's ID (e.g., "tab01", "tab02", etc.)
+  const targetTabId = event.target.id;
+
+  // Map the input IDs to the tablero div IDs
+  const tableroMap = {
+    tab01: 'tablero01',
+    tab02: 'tablero02',
+    tab03: 'tablero03'
+  };
+
+  // Determine which tablero to show
+  const targetTableroId = tableroMap[targetTabId];
+
+  // Get all tableros
+  const tableros = document.querySelectorAll('.tablero-container');
+
+  // Get the currently active tablero
+  const currentTablero = document.querySelector('.tablero-container.active');
+
+  // If there's an active tablero, start fading it out
+  if (currentTablero && currentTablero.id !== targetTableroId) {
+    currentTablero.classList.remove('active'); // Remove active to start fade-out
+  }
+
+  // Fade in the new selected tablero
+  const newTablero = document.getElementById(targetTableroId);
+  newTablero.classList.add('active'); // Add active to start fade-in
+}
+
+// Attach event listeners to the radio inputs
+document.getElementById('tab01').addEventListener('change', switchTablero);
+document.getElementById('tab02').addEventListener('change', switchTablero);
+document.getElementById('tab03').addEventListener('change', switchTablero);
+
+
+// Initialize: Show the first tablero on page load
+document.getElementById('tab01').checked = true; // Set the first tab as checked
+document.getElementById('tablero01').classList.add('active'); // Mark the first tablero as active
+
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  // Get all parent li elements that contain a submenu
+  const navItems = document.querySelectorAll('.lx-db-nav-ul li');
+
+  // Function to toggle submenu visibility
+  function toggleMenuVisibility(event) {
+    // Prevent the default behavior (if using anchor links)
+    event.preventDefault();
+
+    // Close all open submenus first
+    navItems.forEach(item => {
+      item.classList.remove('menu-visible');
+    });
+
+    // Open the clicked submenu
+    event.currentTarget.classList.add('menu-visible');
+  }
+
+  // Attach event listeners to all nav items
+  navItems.forEach(item => {
+    // Check if the nav item has a submenu (i.e., a .menu-vertical-container inside)
+    if (item.querySelector('.menu-vertical-container')) {
+      // Add click event listener for touch devices
+      item.addEventListener('click', toggleMenuVisibility);
+    }
+  });
+
+  // Close the menu if clicking outside
+  document.addEventListener('click', function(event) {
+    // If the click is outside the nav menu
+    if (!event.target.closest('.lx-db-nav-ul')) {
+      navItems.forEach(item => {
+        item.classList.remove('menu-visible');
+      });
+    }
+  });
+});
+
+</script>
+
+
+
+<script>
+  // VALORES DE TEST REALIZADOS Y TEST PENDIENTES
+  const testsMade = 15;
+  const testsLeft = 5;
+  const totalTests = testsMade + testsLeft;
+  
+  // CALCULO DEL PORCENTAJE DE AVANCE
+  const progressPercentage = (testsMade / totalTests) * 100;
+  
+  // MODIFICA LA BARRA DE PROGRESO VERDE BASADO EN EL PORCENTAJE OBTENIDO
+  document.getElementById('progress-bar').style.width = progressPercentage + '%';
+  
+  // Optionally, update the displayed percentage if necessary
+  document.getElementById('aev-avance').innerHTML = `<p>${Math.round(progressPercentage)}%</p>`;
+  
+  </script>
+  <script src="js/acc.js"></script>
+</html>

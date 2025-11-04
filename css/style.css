@@ -164,7 +164,7 @@ textarea {
   display: flex;
   flex-direction: column;
   width: 1167px;
-  height: 740px;
+  
   align-items: center;
   flex: 1 0 0;
   align-self: stretch;
@@ -178,6 +178,7 @@ textarea {
   top: 0;
   left: 0;
   width: 100%; /* Adjust as per your layout */
+  min-height: 750px;
   transition: opacity 0.7s ease; /* Smooth fade transition */
 }
 .tablero-container.active {
@@ -1574,12 +1575,11 @@ textarea {
             padding-bottom: 8px;
           }
           .sec-logo{
-            width: 90px;
-            height: 51px;
+            
+            
             display: block;
             
-            border-radius: 4px;
-            flex: 0 0 90px;
+            
           }
           .sec-text{
             display:flex;
