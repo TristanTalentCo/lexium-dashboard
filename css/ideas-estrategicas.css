@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+        :root {
+            --hd-logo-height: 100px;
+            --bd-rd: 8px;
+            --rw-hgt: 36px;
+            --lx-white: #fff;
+            --lx-dark-blue: #00326e;
+            --lx-orange: #f24305;
+            --lx-light-blue: #0561f2;
+            --lx-light-grey: #eee;
+            --lx-dark-grey: #505050;
+            --color-border: rgba(0,0,0,0.2);
+            --color-border-t: rgba(0,0,0,0);
+            --color-header-text: #fff;
+        }
+
+        
+        .section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+        .ideas-row-container {
+            margin: 16px;
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        .rep-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: calc(var(--rw-hgt) - 3px);
+        }
+        .report-h-top {
+            width: 100%;
+            padding: 10px 8px 10px 16px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .r-h-logo {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            padding-left: 8px;
+        }
+        .r-h-logo img {
+            height: 30px;
+        }
+        .r-h-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0;
+        }
+        .r-h-title {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--color-header-text);
+        }
+
+
+        .r-h-notas {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            flex: 1;
+        }
+        .tb-row {
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid var(--color-border);
+            overflow: hidden;
+        }
+        .tb-row:nth-of-type(odd) {
+            background: var(--row-a-bg);
+        }
+        .tb-row:nth-of-type(even) {
+            background: var(--row-b-bg);
+        }
+        .tb-row:last-child {
+            border: none !important;
+        }
+        /*CONTENEDOR GRILLAS*/
+        
+        .tb-row-grid-4 {
+            display: grid;
+            grid-template-columns: .55fr .45fr !important;
+            width: 100%;
+            height: var(--rw-hgt);
+            background: none !important;
+            border: none !important;
+        }
+        .tb-row-grid {
+            display: grid;
+            grid-template-columns: .6fr .4fr !important;
+            width: 100%;
+            height: var(--rw-hgt);
+            background: none !important;
+            border: none !important;
+        }
+        .tb-row-grid-2 {
+            display: grid;
+            grid-template-columns: .7fr .3fr !important;
+            width: 100%;
+            height: var(--rw-hgt);
+            background: none !important;
+            border: none !important;
+        }
+        .tb-row-grid-1 {
+            display: grid;
+            grid-template-columns: .8fr .2fr !important;
+            width: 100%;
+            height: var(--rw-hgt);
+            background: none !important;
+            border: none !important;
+        }
+        /*CONTENEDOR GRILLAS*/
+
+        /*---------------------------------*/
+        /*GRILLAS CON COLUMNAS DE 4 3 2 Y 1*/
+        .b-icon-grid-4{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            width: 100%;
+        }
+        .b-icon-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 100%;
+        }
+        .b-icon-grid-2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100%;
+        }
+        .b-icon-grid-1{
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 100%;
+        }
+        /*GRILLAS CON COLUMNAS DE 4 3 2 Y 1*/
+        /*---------------------------------*/
+
+        .b-icon-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .55rem;
+            font-weight: 600;
+        }
+        .b-icon-item img{
+            height: 22px;
+        }
+        .tb-row .tb-col-a{
+            gap: 12px;
+            
+        }
+        .tb-col-a {
+            font-size: .75rem;
+            font-weight: 500;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding-left: 8px;
+            gap: 12px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .tb-col-b {
+            border-left: 1px solid var(--color-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tb-bullet{
+            font-size:.6rem; 
+            margin-right:8px;
+        }
+        /* ESTILOS ACORDEON */
+        .accordion {
+            border: 1px solid var(--color-border);
+            border-radius:var(--bd-rd);
+            background: #f7f7f7;
+            padding: 0;
+            overflow: hidden;
+            user-select: none;
+        }
+        .accordion-header{
+            width: 100%;
+            text-align: left;
+            background: none;
+            border-top: none;
+            border-bottom: 1px solid var( --color-border);
+            outline: none;
+            font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            align-items: center;       
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .accordion-header{
+            background-color: var(--lx-dark-blue);
+            color: var(--lx-white);
+            border-left: none;
+            border-right: none;
+            padding-left: 8px;
+            font-size: 1rem;
+        }
+        .accordion-header:hover {
+            background-color: var(--lx-light-blue);
+        }
+        .accordion-child-header2{
+            font-weight: 500;
+            font-size: .5rem;
+            background-color: var(--atag-a);
+            height: 30px;
+            justify-content: space-between;
+            border: none;
+        }
+        .accordion-child-header:hover {
+            
+        }
+        .accordion-header .fa,
+        .accordion-child-header .fa {
+            margin-left: 0;
+            transition: transform 0.2s;
+        }
+        .accordion-header[aria-expanded="true"] .fa,
+        .accordion-child-header[aria-expanded="true"] .fa {
+            transform: rotate(180deg);
+        }
+        .accordion-body {
+            display: none;
+        }
+        .accordion-body.open {
+            display: block;
+        }
+        .accordion-child {
+            background-color: var(--color-table-row-bg) ;
+        }
+        .accordion-child-body {
+            display: none;
+        }
+        .accordion-child-body.open {
+            display: block;
+        }
+        .accordion-body p, 
+        .accordion-child-content p{
+            padding: 0;
+            margin: 0;
+        }
+
+        /*ACORDEON OCULTA EL HEADER DE LA TABLA  HABILIDADES INTELECTUALES DE ORIENTACION VOCACIONAL*/
+        
+.ct-hidden { display: none !important; }
+.ct-visible-grid { display: grid !important; }
+
+
+
+
+
+        /* IDEAS ESTRATEGICAS TABLERO 2 COMO USAR ESTA INFORMACION */
+          .sec-content {
+            display: flex;
+            width: 1136px;
+            padding: 16px 16px;
+          }
+          .ideas-row {
+            font-family: 'poppins', 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            flex-direction: row;
+          }
+          .ideas_col {
+            display: flex;
+            flex-direction: column;
+            background: #fff;
+            border: 1px solid rgba(0,0,0,0.2);
+            border-radius: 8px;
+            padding: 12px;
+          }
+          .i-txt-h {
+            margin-bottom: 10px;
+          }
+          .i-txt-h h3 {
+            color: #444;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 12px 24px;
+          }
+          .i-txt-p {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-top: 1px solid rgba(0,0,0,0.2);
+            padding: 12px 24px;
+            margin-bottom: 10px;
+            gap: 8px;
+          }
+
+          .i-txt-p p {
+            width: 50%;
+            color: #444;
+            line-height: 1.5;
+            margin-bottom: 1em;
+          }
+
+          .two-col, .three-col {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+          }
+
+          .two-col .col {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+          }
+
+          .three-col .col {
+            flex: 1;
+          }
+          .t-col {
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .ie-logo {
+            max-width: 322px;
+            margin: 12px auto;
+            display: block;
+          }
+          .ie-skillmap {
+            width: 223px;
+            height: 53px;
+          }
+          
+      /* TABLERO 3 IDEAS EN ACCION*/
+
+          .i-accion{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          .i-txt-h {
+            margin-bottom: 8px;
+          }
+
+          .i-txt-h h3 {
+            color: #444;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 8px 12px;
+          }
+
+
+
+          /* Row with two idea columns */
+          .ideas-a-row {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            align-items: center;
+            justify-content: center;
+          }
+
+          /* Single idea column with image + text */
+          .ideas-a-col {
+            width: 40%;
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            padding: 8px 0;
+            
+            
+          }
+
+          /* image box */
+          .ie-acc {
+            width: 150px;
+            height: 150px;
+            background-color: #f4f4f4;
+            background-size: cover;
+            background-position: center;
+            border: 1px solid rgba(0,0,0,0.06);
+            border-radius: 4px;
+            flex: 0 0 150px;
+          }
+
+          /* descriptive text beside image */
+          .idea-desc {
+            color: #444;
+            line-height: 1.4;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+          }
