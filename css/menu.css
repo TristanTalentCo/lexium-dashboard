@@ -17,6 +17,7 @@
 --lx-gray-widget-shadow:#d7953300;
 --lx-gray-widget-contextmenu-hover:#FFD2B3;
 --lx-blue-main:#0444C2;
+--color-primary: #f24605;
 /*widget colors*/
 
 --lx-gray-text-main:#3F3F3F;
@@ -55,6 +56,7 @@
 html {
   font-size: 1em;
   line-height: 1.4;
+ 
 }
 
 
@@ -113,7 +115,7 @@ body {
 }
 
 .lx-db-header-top-logo img{
-  height: 25px;
+  height: 70px;
   padding: 10px 5px;
 }
 .searchbar-container{
