@@ -1892,9 +1892,22 @@ textarea {
   transition: background-color 0.3s ease;
 
 }
+.app-i-circle img{
+  filter: opacity(.3);
+
+}
+.app-i-circle img{
+  transition: opacity 0.3s ease;
+
+}
 
 .app-control-radio input:checked + .app-i-circle {
   background-color: #4EA000;
+  
+}
+.app-control-radio input:checked + .app-i-circle img{
+  filter: opacity(1);
+  
 }
 /*--*/
 .app-tb-nps-name {
