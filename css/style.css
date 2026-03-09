@@ -1685,7 +1685,7 @@ textarea {
   min-height: 500px;
 }
 .app-section {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -1983,6 +1983,7 @@ textarea {
 }
 
 .app-wiz-mod {
+  
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -2031,7 +2032,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   
 }
 
@@ -2209,7 +2210,8 @@ textarea {
 
 .nps-isolate-container{
   width: 100%;
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2243,7 +2245,7 @@ textarea {
 
 .nps-sub-container {
   width: 100%;
-  height: 800px!important;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2522,6 +2524,7 @@ textarea {
   align-items: center;
   justify-content: center;
   font-family: 'poppins', sans-serif;
+  
 }
 
 .nps-scorebox-container {
@@ -2551,7 +2554,7 @@ textarea {
 .nps-sb-t-top {
   width: 100%;
   color: #444444;
-  font-size: 1.6em;
+  font-size: 1em;
   font-weight: 600;
   
   padding: 0;
@@ -2559,9 +2562,9 @@ textarea {
 }
 
 .nps-sb-t-btm {
-  width: 211px;
+  width: fit-content;
   color: #444444;
-  font-size: 1em;
+  font-size: .7em;
   
   
   padding: 0;
