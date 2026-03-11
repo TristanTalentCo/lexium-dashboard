@@ -2006,7 +2006,17 @@ textarea {
   padding-bottom: 14px;
   display: flex;
   flex-direction: column;
+  
   gap: 0;
+}
+.app-wiz-title-frame h3{
+  
+  width: 100%;
+  color: #444;
+  font-size: 1.4em;
+  font-family: 'poppins', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 .app-wiz-paso {
@@ -2501,15 +2511,23 @@ textarea {
 }
 
 .nps-tb-cell-text {
+  
   font-size: 12px;
   color: #444444;
+  
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .tb-c-center{
   justify-content: center;
 }
 .tb-c-right {
   justify-content: flex-end;
+}
+.tb-c-crop{
+  width: 55px;
 }
 .nps-progress-bar {
   height: 20px;
