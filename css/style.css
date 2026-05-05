@@ -2032,8 +2032,9 @@ textarea {
 }
 .app-wiz-title-2{
   display: flex;
-  flex-direction: row;
-  
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
   width: 460px;
   color: #444;
   font-size: 1.4em;
@@ -2231,8 +2232,8 @@ input[type=number] {
 .nps-nombre{
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
   font-size: 18px;
   font-weight: 700;
   color: #444;
